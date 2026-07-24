@@ -1,0 +1,3212 @@
+//=============================================================================
+// File: math_cheat_sheets.uni.txt
+//-----------------------------------------------------------------------------
+// Description: Math text-based cheat sheet.
+//-----------------------------------------------------------------------------
+// Authors: Danny Sarraf + References
+//-----------------------------------------------------------------------------
+// References:
+// NOTE: Almost all the information in this file originated from the following sources. The information has simply been reformatted, and sometimes rearranged and summarised in a text friendly format.
+// https://mathtutor.com.sg/wp-content/uploads/2024/06/Paradigm-A-Math-Consolidation-Cheatsheet.pdf
+// https://tutorial.math.lamar.edu/pdf/common_derivatives_integrals.pdf
+// https://www.resonance.ac.in/sc/post/attachment/(969)-maths-gyaan-sutra-jee-main.pdf
+// https://images-na.ssl-images-amazon.com/images/G/31/img16/Books/ExamCentral/Aug/IMPORTANT_FORMULAE_FOR_COMPETITIVE_EXAMS.pdf
+// https://tutorial.math.lamar.edu/pdf/common_derivatives_integrals.pdf
+// https://www.resonance.ac.in/sc/post/attachment/(969)-maths-gyaan-sutra-jee-main.pdf
+// https://drive.uqu.edu.sa/_/quc_physics/files/1300%20Math%20Formulas%20by%20Golden%20Art.pdf
+// https://pages.cs.wisc.edu/~tdw/files/cookbook-en.pdf
+// Khan Academy
+//-----------------------------------------------------------------------------
+// URL: https://github.com/dddansar/learning-resources
+//-----------------------------------------------------------------------------
+// Copyright: Licensed under Creative Commons BY 4.0
+// Copyright (c) 2026 Danny Sarraf
+// https://creativecommons.org/licenses/by/4.0/
+//=============================================================================
+
+
+//-----------------------------------------------------------------------------
+//                                   INDEX
+//-----------------------------------------------------------------------------
+// 1. Algebra
+// 2. Interest
+// 3. Geometry
+// 4. Trigonometry
+// 5. Inverse trigonometric functions
+// 6. Limits
+// 7. Multivariable Calculus
+// 8. 3-Dimension
+// 9. Differential Equations
+// 10. Laplace transforms
+// 11. Differentiations
+// 12. Integration
+// 13. Sequence & series
+// 14. Complex numbers
+// 15. Primes, factors
+// 16. Inequalities
+// 17. Linear Algebra - Matrices
+// 18. Sets
+// 19. Permutations & Combinations
+// 20. Probability
+// 21. Statistics
+// 22. Logic
+//-----------------------------------------------------------------------------
+
+
+//-----------------------------------------------------------------------------
+// 1. Algebra
+//-----------------------------------------------------------------------------
+Completing the square:
+x²+b*x+c = (x+(b/2))² - b²/4 + c
+
+Quadratic formula: the roots of ax²+bx+c: (-b±√(b²-4ac))/(2a)
+If two quadratic equations have both roots common, then
+   a₁/a₂ = b₁/b₂ = c₁/c₂
+If only one common room then
+   α=(c₁a₂-c₂a₁)/(a₁b₂-a₂b₁)=(b₁c₂-b₂c₁)/(c₁a₂-c₂a₁)
+
+Location of Roots:
+Let f (x) = ax² + bx + c, where a > 0 & a,b,c ∈ R.
+(i)Conditions for both the roots of f(x) = 0 to be greater than a specified number x₀ are:
+   b² - 4ac ≥ 0; f(x₀) > 0 & (-b/2a) > x₀.
+(Ii)Conditions for both the roots of f(x) = 0 to be smaller than a specified number x₀ are:
+   b² - 4ac ≥ 0; f(x₀) > 0 & (-b/2a) < x₀.
+(Iii)Conditions for both roots of f(x) = 0 to lie on either side of the number x₀ (in other words the number x₀ lies between the roots of f (x) = 0), is:
+   f(x₀) < 0.
+(Iv)Conditions that both roots of f (x) = 0 to be confined between the numbers x₁ and x₂, (x₁ < x₂) are:
+   b² - 4ac ≥ 0; f(x₁) > 0 ; f(x₂) > 0 & x₁ < (-b/2a) < x₂.
+(v)Conditions for exactly one root of f(x) = 0 to lie in the interval (x₁, x₂) i.e. x₁ < x < x₂ is:
+   f(x₁)f(x₂) < 0
+
+
+Exponent rules:
+Product Rule:     aᵇ⋅aᶜ=aᵇ⁺ᶜ
+Quotient Rule     aᵇ/aᶜ=aᵇ₋ᶜ
+Power Rule        (aᵇ)ᶜ=aᵇᶜ
+                  a¹ᐟᵇ=ᵇ√a
+                  aᶜᐟᵇ=ᵇ√(aᶜ)
+Negative Exponent a⁻ⁿ=1/aⁿ
+(Ab)ᵐ= aᵐbᵐ
+(a/b)ᵐ= aᵐ/bᵐ
+a⁰=1 ; a≠0
+a¹=a
+
+Roots
+ⁿ√(ab) =ⁿ√a ⁿ√b     ; Just use same power notation as above for roots!, easier to read and work with!
+                      Otherwise you end up repeating all the same formulas just with roots instead of powers...
+
+
+logₐx=y -> bʸ=x
+logₐ(xy)=logₐx+logₐy
+logₐ(x/y)=logₐx-logₐy
+
+logₐ(1) = 0
+logₐ(a) = 1
+logₐ(0) = ⎧-∞ a > 1⎫
+          ⎩+∞ a < 1⎭
+logₐ(xⁿ) = n logₐ(x)
+logₐ(ⁿ√x) = 1/n logₐ(x)
+
+logₐ(x) = log꜀(x)/log꜀(a) = log꜀(x) log꜀(c) ; c > 1, c ≠ 1
+logₐ(c) = 1/log꜀(a)
+x=aˡᵒᵍ⁻ᵃ ˣ aka a^logₐ(x)
+
+log(x)= log₁₀ x
+ln (x)= logₑ  x
+
+log(x)= (1/ln 10) ln  x
+ln (x)= (1/log e) log x
+
+logₐᶺₘ(aⁿ)=n/m
+log₁៸ₐ(b)=-logₐ(b)
+
+
+a²-b²=(a+b)(a-b)
+a³-b³=(a-b)(a²+ab+b²)
+a³+b³=(a+b)(a²-ab+b²)
+a⁴-b⁴=(a²+b²)(a²-b²)
+If n is odd
+aⁿ+bⁿ=(a+b)(aⁿ⁻¹-aⁿ⁻²b+...-abⁿ⁻²+bⁿ⁻¹)
+If n is even
+aⁿ-bⁿ=(a-b)(aⁿ⁻¹+aⁿ⁻²b+...+abⁿ⁻²+bⁿ⁻¹)
+aⁿ+bⁿ=(a+b)(aⁿ⁻¹-aⁿ⁻²b+...-abⁿ⁻²+bⁿ⁻¹)
+
+(a-b)³=a³-3a²b+3ab²-b³
+(a+b)³=a³+3a²b+3ab²+b³
+(a-b)⁴=a⁴-4a³b+6a²b²-4ab³+b⁴
+(a+b)⁴=a⁴+4a³b+6a²b²+4ab³+b⁴
+See binomial formula for general case
+
+
+Basic Algebraic Formula
+(a+b+c)²=a²+b²+c²+²ab+²bc+²ca
+(a-b-c)²=a²+b²+c²-²ab+²bc-²ca
+a⁵-b⁵=(a-b)(a⁴+a³b+a²b²+ab³+b⁴)
+(a+b+c)²=a²+b²+c²+²ab+²bc+²ca
+(a+b+c+...)²=a²+b²+c²+...+²(ab+ac+bc+...
+(x+y+z)²=x²+y²+z²+²xy+²yz+²xz
+(x+y-z)²=x²+y²+z²+²xy-²yz-²xz
+(x-y+z)²=x²+y²+z²-²xy-²yz+²xz
+(x-y-z)²=x²+y²+z²-²xy+²yz-²xz
+x³+y³+z³-³xyz=(x+y+z)(x²+y²+z²-xy-yz-xz)
+x²+y²=1/2 [(x+y)²+(x-y)²]
+(x+a)(x+b)(x+c)=x³+(a+b+c)x²+(ab+bc+ca)x+abc
+x³+y³=(x+y)(x²-xy+y²)
+x³-y³=(x-y)(x²+xy+y²)
+x²+y²+z²-xy-yz-zx=1/2 [(x-y)²+(y-z)²+(z-x)²]
+
+
+If a/b=c/d then:
+(a+b)/b=(c+d)/d – Componendo Law
+(a-b)/b=(c-d)/d – Dividendo Law
+(a+b)/(a-b)=(c+d)/(c-d) – Componendo & Dividendo Law
+
+
+https://mathtutor.com.sg/wp-content/uploads/2024/06/Paradigm-A-Math-Consolidation-Cheatsheet.pdf
+Show that the expression is negative for all real values of x.
+Prove that the expression is always positive for all values of x.
+Step 1: Flush everything to the left and rearrange according to
+Ax² + bx + c
+Step 2: Apply b² - 4ac but don't put the sign
+Step 3: Simplify and rearrange according to ax² + bx + c
+Step 4: Use Completing The Square/otherwise (See Condition)
+Step 5: For all real values of x, ____ is positive/negative (Proven)
+Example b² - 4ac = [-(k + 2)]² - 4(3)(2k - 9) = k² + 4k + 4 - 24k + 108 = k² - 20k + 111 = (k - 10)² + 12
+Since (k - 10)² + 12 > 0, b² - 4ac > 0 and line intersects the curve for all real values of k.
+
+Rationalisation of Surds: (We don't like SqRoots in Denominator)
+4/(2 + √3) = 4/(2 + √3) × (2 - √3)/(2 - √3) = 4(2 - √3)/(4 - 3) = 8 - √3
+
+n(x)/(ax + b)(cx + d) = a/(ax + b) + b/(cx + d)
+n(x)/(ax + b)² =a/(ax + b) + b/(ax + b)²
+n(x)/(ax + b)(x² + c²) = a/(ax + b) + (bx + c)/(x² + c²)
+
+(4 - 4x - 8x²)/x²(x + 2) = A/x + B/x² + C/(x + 2)
+
+Solve log₅x = 4 logₓ5 + 3
+log₅x = 4 log₅5/log₅x + 3
+log₅²x - 3 log₅x + 4 = 0
+log₅x = 4 or log₅x = -1
+x= 4⁵ = 625 or x = 5⁻¹ = 1/5
+
+Solve 3ˣ = 5
+x ln 3 = ln 5
+x = ln 5 /ln 3
+
+Solve 4²ˣ⁺³ = 7³⁻ˣ
+4²ˣ × 4³ = 7³ × 7⁻ˣ
+16ˣ × 64 = 343 × 7⁻ˣ
+16ˣ / 7⁻ˣ = 343/64
+16ˣ × 7ˣ = 343/64
+(16 × 7)ˣ = 343/64
+112ˣ = 343/64
+x log 112 = log (343/64)
+x = log (343/64) / log 112
+x = 0.3558
+
+Solve 3²ˣ - 9x + 2 = 0
+(3ˣ)² - 3(3ˣ) + 2 = 0
+𝑦² - 3𝑦 + 2 = 0
+
+Solve
+∫(4x³ + 5x² + x - 1)/x²(x + 1)
+= ∫ (4 + 2/x - 1/x² - 1/(x+1)) dx
+= 4x + 2 ln x + 1/x - ln(x + 1) + c
+
+
+Even function
+f(-x)=f(x)
+Odd function
+f(-x)=-f(x)
+Periodic function
+f(x+nT)=f(x)
+Inverse function
+y=f(x) ; x=g(y) or y=f⁻¹(x) is it's inverse function
+Composite function
+y=f(u) u=g(x) y=f(g(x)) is a composite function
+Linear function
+y=ax+b ; x ∈ ℝ, a = tan α
+Quadratic function
+y=ax²+bx+c
+Cubic function
+y=ax³+bx²+cx+d
+Power function
+y=xⁿ ; n ∈ N
+Root function
+y=x¹ᐟⁿ
+Exponential function
+y=aˣ
+Logarithmic function
+y=logₐx ; x > 0 ; a > 0, a ≠ 1
+
+
+Cubic & higher degree equations
+-------------------------------
+Consider the cubic equation ax³ + bx² + cx + d = 0.
+The equation would have 3 roots (equal to the degree of the equation). Some of them can be imaginary. If the roots are denoted as α, β and γ, we have
+α+β+γ=-b/a
+αβ+αγ+βγ=c/a
+αβγ=-d/a
+
+The above can be extended for higher degree equations as well. For an 'n' degree equation,
+Sum of roots = - coefficient of xⁿ⁻¹/coefficient of xⁿ
+Sum of roots taken two at a time = coefficient of xⁿ⁻²/coefficient of xⁿ
+Sum of roots taken 'r' at a time =(-1)ʳ coefficient of xⁿ⁻ʳ/coefficient of xⁿ
+
+Product of roots = (-1)ⁿ constant term/coefficient of xⁿ
+
+Remainder Theorem:
+To identify whether a given expression is a factor of another expression, we can take help of Remainder Theorem.
+According to the remainder theorem, when any expression f(x) is divided by (x - a), the remainder is f(a). (a is any constant in this example).
+
+Factor Theorem:
+An expression is said to be a factor of another expression only when the remainder is 0 when the latter is divided by the former. (x - a) is a factor of f(x) if and only if f(a) = 0.
+
+
+Basic Arithmetic operations
+---------------------------
+Level 1: succession a -> a+1 (this is more akin to counting in order (going to next element/member) rather than adding with 1)
+Level 2: Addition a+b=a+1+...+1 (b times)
+Level 3: Multiplication: a*b = a+...+a (b times)
+Level 4: Exponentiation: aᵇ=a*...*a (b times)
+aᵇ=a↑b
+Level 5: Tetration: ᵇa= ((aᵃ)...)ᵃ
+ᵇa=a↑↑b
+Level 6: Pentation: a↑↑↑b=a↑↑(a↑↑(...a↑↑)) (b times)
+Level N: same pattern: a(↑*(N-3))b !
+
+
+
+https://images-na.ssl-images-amazon.com/images/G/31/img16/Books/ExamCentral/Aug/IMPORTANT_FORMULAE_FOR_COMPETITIVE_EXAMS.pdf
+Rules of counting numbers
+Sum of first n natural numbers = n(n + 1)/2
+Sum of first n odd natural numbers = n₂
+Sum of first n even natural numbers = n(n + 1)
+Sum of the squares of first n natural numbers  = n(n + 1)(2n + 1)/6
+Sum of the cubes of first n natural numbers = (n(n + 1)/2)²
+
+Two successive percentage changes of a% and b% is an effective change of (a + b + ab/100)%.
+If A is r% more/less than B, B is 100r/(100±r) % less/more than A.
+
+If a < b and x is a positive quantity, then
+a/b < (a+x)/(b+x)
+a/b > (a-x)/(b-x)
+
+If a/b = c/d then
+(a+b)/b = (c+d)/d
+(a-b)/b = (c-d)/d
+(a+b)/(a-b) = (c+d)/(c-d)
+(a±c)/(b±d) = a/b
+
+If a/b = c/d = e/f = k then
+(a+b+c)/(d+e+f) = k
+(pa+qb+rc)/(pd+qe+rf) = k  ; p, q, r ≠ 0
+
+
+//-----------------------------------------------------------------------------
+// 2. Interest
+//-----------------------------------------------------------------------------
+I = interest, p = principle; r = annual interest rate; t = time in years; A = amount of money after t years; n = compound periods per year.
+
+Simple interest I = p*r*t
+I = Prt
+FV = P + I = P(1+rt)
+P = FV/(1+rt)
+
+Compound interest A = p(1+r/n)ⁿᵗ
+FV = PV(1+i)^n
+i = jₘ/m
+PV = FV/(1+i)ⁿ
+
+Let P = Original Population, P' = Population after n years, r% = rate of annual growth
+P' = P(1+r/100)ⁿ
+
+Growth and Decay
+When the growth is a percent of the total population, Pғ = Pᵢ(1 ± r)ⁿ, where the rate is expressed as a decimal.
+When the growth is a multiple or ratio of the total population, Pғ = Pᵢ(multiplier)ⁿ
+
+Incenter, (((centroid, circumcenter))), and orthocenter, are four triangle centers known to the ancient Greeks
+Incenter (circle inside triangle) ((ax₁+bx₂+cx₃)/(a+b+c), ((((ay₁+by₂+cy₃))))/(a+b+c))
+Centroid (the geometric center or average location of a shape) G = (∑(ᵢ₌₀:៷)xᵢ/N, ∑(ᵢ₌₀:៷)yᵢ/N)
+Circumcenter (circle outside triangle) (1/2 a*cot(A),1/2 b*cot(B),1/2 c*cot(C)).
+Orthocenter (intersection of 3 right angles and the 3 points of the triangle (altitudes))
+Excenter (3 circles outside the triangle on the bisector lines and tangent to each side)
+
+
+//-----------------------------------------------------------------------------
+// 3. Geometry
+//-----------------------------------------------------------------------------
+(A= area, b=base, h=height, a=apothem, p=perimeter, V=Volume, B = area of base, SA = surface area, P = perimeter of base, r = radius, s = slant height)
+Circle: circumference=2πr=πd, circle area=πr², area of sector θ/360 πr²
+Ellipse: area=πab, where 2a and 2b are the lengths of the axes of the ellipse.
+Sphere: vol=4πr³/3, surface area=4πr²
+Cylinder: vol=πr²h, lateral area=2πrh, total surface area=2πrh+2πr²
+Cone: vol=πr²h/3, lateral area=πr√(r²+h²), total surface area=(πr√(r²+h²))+πr².
+Area of Triangle Area = 1/2 × base × height
+Parallelogram Area = bh
+Trapezoid A=1/2 (b₁ + b₂)h
+Regular polygon A=1/2 ap
+Prism V=Bh
+Right Prism SA=28+Ph
+Circular Cylinder V = πr²h
+Right Circular cylinder SA = 2πr² + 2πrh
+Pyramid V= 1/3 Bh
+Square Pyramid V=1/3 b²h
+Right Pyramid SA= B + 1/2 Ps
+Circular Cone V = 1/3 πr²h
+Right circular Cone SA = πr² + πrs
+
+Degree Measure in a Regular Polygon 180(n-2)/n
+Sum of Degree Measures in a Polygon 180(n-2)
+n = number of sides
+
+Slope Formula Slope = (y₂ - y₁)/(x₂ - x₁)
+Point-slope formula for straight line through the point (x₀,y₀) with slope m: y=y₀+m(x-x₀)
+Circle with radius r centered at (h,k): (x-h)²+(y-k)²=r²
+Ellipse with axes on the x-axis and y-axis: x²/a²+y²/b²=1.
+
+Distance Formula d = √((x₁-x₂)²+(y₁-y₂)²)
+Midpoint m = ((x₁+x₂)/2, (y₁+y₂)/2)
+
+Tangent at (x₁,y₁) : (y-y₁)=f'(x₁)(x-x₁)
+Normal  at (x₁,y₁) : (y-y₁)=(1/f'(x₁))(x-x₁) ; f'(x₁) ≠ 0
+
+PT = Length of tangent = |k|√(1+1/m²)
+PN = Length of normal = |k|√(1+m²)
+TM = Length of subtangent = |k/m|
+MN = Length of subnormal = |km|
+|
+|   (P(h,k)
+|   |︶
+|  /| \
+| / |  \
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+  N M  T
+
+
+Square root approximations
+--------------------------
+Ex: √17
+Start with the closest match
+1² = 1
+2² = 4
+3² = 9
+4² = 16
+5² = 25
+6² = 36
+7² = 42
+8² = 64
+9² = 81
+10²= 100
+...
+Which is 4² = 16
+Then add the difference between 17-16 = 1 divided by 4*2
+√17 ≈ 4 + 1/8
+4.123105626 ≈ 4.125
+√23 ≈ 5 - 2/10
+√2 ≈ 1 + 1/2 = 1.5
+1.414213562
+Then you can repeat this process for additional fractions.
+1.5²=2.25
+√2 ≈ 1 + 1/2 + -0.25/3 = 1 + 1/2 + -1/12 = 17/12 = 1.41667
+1.41667²=2.006953889
+(17/12)²=289/144
+√2 ≈ 1 + 1/2 + -0.25/3 + -0.006953889/(1.41667*2) = 1.414215692
+Or with fractions: 289/144 - 2*144/144 = 1/144
+√2 ≈ 1 + 1/2 + -1/12 + -(1/144)/((17/12)*2) = 1.414215686 !
+
+√2 ≈ 1 + (2-1²)/(1*2) + (2-(3/2)²)/((3/2)*2) + (2-(17/12)²)/((17/12)*2) + ... !
+
+Visual/Geometric intuition:
+√s ≈ a
+s ≈ a²
+b = s - a²
+√s ≈ a + b/2a
+
+Suppose we have a square
+Square Area = s
+The side of square = √s
+Then construct a smaller square with side a
+
+√s
+--------------------
+| a            | c |
+|------------------|
+|              |   |
+|              |   |
+|              |   |
+|              |   |
+|              |   |
+|              |   |
+--------------------
+s ≈ a²
+b = s - a² (b is the area of the bigger square minus the smaller square which is still unknown) (maybe give the variables better names or letters?)
+Now we create 2 rectangles to fill in the gap. These will have length a, as a is known.
+We want 2*a*x (area of 2 rectangle) = b (the area we want to approximate)
+x = b/2a
+√s ≈ a + x
+√s ≈ a + b/2a
+
+
+//-----------------------------------------------------------------------------
+// 4. Trigonometry
+//-----------------------------------------------------------------------------
+
+sin(θ)=opposite/hypotenuse
+cos(θ)=adjacent/hypotenuse
+tan(θ)=opposite/adjacent
+sec(θ)=1/cos(θ)
+csc(θ)=cosec(θ)=1/sin(θ)
+cot(θ)=cotan(θ)=1/tan(θ)
+
+tan(θ)=sin(θ)/cos(θ)
+cot(θ)=cos(θ)/sin(θ)
+
+Pythagorean Identity
+cos²(θ)+sin²(θ)=1
+
+tan²(θ)+1=sec²(θ)
+sec²(θ)-1=tan²(θ)
+sin(θ)=cos(π/2-θ)
+cos(θ)=sin(π/2-θ)
+sin(θ+π)=-sin(θ)
+cos(θ+π)=-cos(θ)
+
+Pythagorean Theorem: a²+b²=c²
+Law of cosines:                  c²=b²+a²-2ab*cos(C)
+Law of sines:                    a/sin(A)=b/sin(B)=c/sin(C)
+Sine of sum of angles:           sin(x+y)=sin(x)cos(y)+cos(x)sin(y)
+Sine of double angle:            sin(2x)=2sin(x)cos(x)
+Sine of difference of angles:    sin(x-y)=sin(x)cos(y)-cos(x)sin(y)
+Cosine of sum of angles:         cos(x+y)=cos(x)cos(y)-sin(x)sin(y)
+Cosine of double angle:          cos(2x)=cos²(x)-sin²(x)=2cos²(x)-1=1-2sin²(x)
+Cosine of difference of angles:  cos(x-y)=cos(x)cos(y)+sin(x)sin(y)
+Tangent of sum of angles:        tan(x+y)=(tan(x)+tan(y))/1-tan(x)tan(y)
+sin²(θ) and cos²(θ) formulas:    sin²(θ)=(1-cos(2θ))/2
+                                 cos²(θ)=(1+cos(2θ))/2
+
+sin²(A)-sin²(B)=cos²(B)-cos²(A)=sin(A+B)sin(A-B)
+cos²(A)-sin²(B)=cos²(B)-sin²(A)=cos(A+B)cos(A-B)
+cot(A±B)=(cot(A)cot(B)±1)/(cot(A)±cot(B))
+tan(A+B+C)=(tan(A)+tan(B)+tan(C)-tan(A)tan(B)tan(C))/(1-tan(A)tan(B)-tan(B)tan(C)-tan(C)tan(A))
+
+Sum to products
+sin(c)+sin(d)= 2 sin((c+d)/2)cos((c-d)/2)
+sin(c)-sin(d)= 2 cos((c+d)/2)sin((c-d)/2)
+cos(c)+cos(d)= 2 cos((c+d)/2)cos((c-d)/2)
+cos(c)-cos(d)=-2 sin((c+d)/2)sin((c-d)/2)
+tan(c)+tan(d)=   sin(c+d)/(cos(c)cos(d))
+tan(c)-tan(d)=   sin(c-d)/(cos(c)cos(d))
+cot(c)+cot(d)=   sin(d+c)/(sin(c)sin(d))
+cot(c)-cot(d)=   sin(d-c)/(sin(c)sin(d))
+cos(a)+sin(a)=√2 cos(π/4 - a) = √2 sin(π/4 + a)
+cos(a)-sin(a)=√2 sin(π/4 - a) = √2 cos(π/4 + a)
+tan(a)+cot(b)=cos(a-b)/(cos(a)sin(b))
+tan(a)-cot(b)=cos(a+b)/(cos(a)sin(b))
+
+Products to sums
+sin(a)sin(b)=(cos(a-b)-cos(a+b))/2
+cos(a)cos(b)=(cos(a-b)-cos(a+b))/2
+sin(a)cos(b)=(sin(a-b)-sin(a+b))/2
+tan(a)tan(b)=(tan(a)+tan(b))/(cot(a)+cot(b))
+cot(a)cot(b)=(cot(a)+cot(b))/(tan(a)+tan(b))
+tan(a)cot(b)=(tan(a)+cot(b))/(cot(a)+tan(b))
+
+
+sin(2a)=  (2tan(a))/(1+tan²a)
+cos(2a)=(1-tan²(a))/(1+tan²a)
+
+sin(3a)= 3sin(a)-4sin³(a) -> sin³(a) = ...
+cos(3a)=-3cos(a)+4cos³(a)    cos³(a) = ...
+tan(3a)=(3tan(a)-tan³(a))/(1-3tan²(a))
+
+sin(nπ)=0    ; n ∈ ℤ
+cos(nπ)=±1
+tan(nπ)=0
+
+sin( π/12)=(√3-1)/(2√2)
+cos(5π/12)=(√3-1)/(2√2)
+cos( π/12)=(√3+1)/(2√2)
+sin(5π/12)=(√3+1)/(2√2)
+sin( π/10)=(√5-1)/4
+cos(5π/10)=(√5-1)/4
+
+-√(a²+b²) ≤ a sin(θ) + b cos(θ) ≤ √(a²+b²)
+
+Series
+sin(a)+sin(a+b)+sin(a+2b)+...+sin(a+(n-1)b) = (sin(nb/2))/sin(b/2) sin(a+(n-1)b/2)
+cos(a)+cos(a+b)+cos(a+2b)+...+cos(a+(n-1)b) = (sin(nb/2))/sin(b/2) cos(a+(n-1)b/2)
+
+General Solution
+sin b = sin a  ⇒ b = nπ+(-1)ⁿa    where a ∈ [-π/2,π/2], n ∈ ℤ
+cos b = cos a  ⇒ b = 2nπ±a        where a ∈ [0,π],      n ∈ ℤ
+tan b = tan a  ⇒ b = nπ+a         where a ∈ (-π/2,π/2), n ∈ ℤ
+sin²b = sin²a ; cos²b = cos²a ; tan²b = tan²a   ⇒ b = nπ±a
+
+
+Angle btw 2 straight lines tan(θ) = |(m₁-m₂)/(1+m₁m₂)|
+Distance btw 2  lines |(c₁-c₂)/√(a²+b²)|
+Distance btw point and line |(ax₁+by₁+c)√(a²+b²)|
+
+cos²(θ)+sin²(θ)=1 ->
+sin θ = ±√(1-cos²θ) = ±√(1/2(1-cos(2θ))) = 2cos²(θ/2 - π/4) - 1 = 2tan(θ/2)/(1+tan²(θ/2))
+
+tan(θ)=sin(θ)/cos(θ)= ±√(sec₂θ -1) = sin(2θ)/(1+cos(2θ)) = (1-cos(2θ))/sin(2θ)
+      = ±√((1-cos(2θ))/(1+cos(2θ)))=(2tan(θ/2))/(1+tan²(θ/2)))
+
+sin(θ/2) = ±√((1-cosθ)/2)
+cos(θ/2) = ±√((1+cosθ)/2)
+tan(θ/2) = ±√((1-cosθ)/(1+cosθ)) = sinθ/(1+cosθ) = (1-cosθ)/sinθ = csc θ - cot θ
+cot(θ/2) = ±√((1+cosθ)/(1-cosθ)) = sinθ/(1-cosθ) = (1+cosθ)/sinθ = csc θ + cot θ
+
+Powers
+
+sin²(θ)=(1-cos(2θ))/2
+cos²(θ)=(1+cos(2θ))/2
+
+sin³(a)=(3sin(a)-sin(3a))/4
+cos³(a)=(3cos(a)+cos(3a))/4
+
+sin⁴a=(cos(4a)-4cos(2a)+3)/8
+cos⁴a=(cos(4a)+4cos(2a)+3)/8
+
+sin⁵a=(10sin(a)-5cos(3a)+sin(5a))/16
+cos⁵a=(10cos(a)+5sin(3a)+cos(5a))/16
+
+sin⁶a=(10-15cos(2a)+6cos(4a)-cos(6a))/32
+cos⁶a=(10+15cos(2a)+6cos(4a)+cos(6a))/32
+
+sin ix = i sinh x
+tan ix = i tanh x
+cot ix = -i coth x
+sec ix = sech x
+csc ix = -i csch x
+
+
+//-----------------------------------------------------------------------------
+// 5. Inverse trigonometric functions
+//-----------------------------------------------------------------------------
+
+sin⁻¹(sin x) = x; -π/2 ≤ x ≤ π/2
+cos⁻¹(cos x) = x; 0 ≤ x ≤ π
+tan⁻¹(tan x) = x;
+cot⁻¹(cot x) = x; 0<x<π
+sec⁻¹(sec x) = x; 0 ≤ x ≤ π, x≠π/2
+csc⁻¹(csc x) = x; x ≠ 0; -π/2≤x≤π/2
+
+sin⁻¹(-x)=-sin⁻¹x, -1 ≤ x ≤ 1
+tan⁻¹(-x)=-tan⁻¹x, x∈R
+cos⁻¹(-x)=π-cos⁻¹x, -1 ≤ x ≤ 1
+cot⁻¹(-x)=π-cot⁻¹x, x∈R
+sin⁻¹x + cos⁻¹x =π/2 , -1 ≤ x ≤ 1
+tan⁻¹x + cot⁻¹x =π/2 , x∈R
+csc⁻¹x + sec⁻¹x =π/2 , |x| ≥ 1
+
+Identities of Addition and Subtraction:
+sin⁻¹ x + sin⁻¹ y = ⎧    sin⁻¹ [x√(1-y )+y√(1-x )] , x ≥ 0, y ≥ 0 & x² + y² ≤ 1⎫
+                    ⎩π - sin⁻¹ [x√(1-y²)+y√(1-x²)] , x ≥ 0, y ≥ 0 & x² + y² > 1⎭
+
+cos⁻¹ x + cos⁻¹ y = cos⁻¹ [xy - √(1 - ²)√(1 - y²)] , x ≥ 0, y ≥ 0
+
+tan⁻¹ x + tan⁻¹ y = ⎧    tan⁻¹ (x+y)/(1+xy) , x > 0, y > 0 & xy < 1⎫
+                    ⎨π + tan⁻¹ (x+y)/(1-xy) , x > 0, y > 0 & xy > 1⎬
+                    ⎩π/2                    , x > 0, y > 0 & xy = 1⎭
+
+
+//-----------------------------------------------------------------------------
+// 6. Limits
+//-----------------------------------------------------------------------------
+
+limₓ→₀ sin(x)/x = 1
+limₓ→₀ tan(x)/x = 1
+limₓ→₀ (eˣ-1)/x = 1
+limₓ→₀ ln(1+x)/x = 1
+limₓ→₀ (1+x)¹ᐟˣ = e
+limₓ→₀ (1+(1/x))ˣ = e
+limₓ→₀ (1+(k/x))ˣ = eᵏ
+limₓ→₀ (aˣ-1)/x = logₑa ; a > 0
+limₓ→ₐ (xⁿ-aⁿ)/(x-a) = naⁿ⁻¹
+limₓ→ₐ [f(x)]ᵍ⁽ˣ⁾ = e^([limₓ→ₐ ᶠ⁽ˣ⁾⁻¹]ᵍ⁽ˣ⁾)
+
+
+Limits Using Expansion
+aˣ=1+x*ln(a)/1!+x²*ln²(a)/2!+... ; a > 0
+eˣ=1+x/1!+x²/2!+...
+ln(1+x)=x-x²/2+x³/3+...
+sin(x)=x-x³/3!+x⁵/5+...
+cos(x)=1-x²/2!+x⁴/4+...
+tan(x)=x+x³/3+2x⁵/15+...
+(1+x)ⁿ=1+n*x+n(n-1)x²/2!+n(n-1)(n-2)x³/3!+...
+
+Sandwich Theorem or Squeeze Play Theorem:
+if f(x)≤g(x)≤h(x) ∀x & Limit f(x) = 𝑙 = Limit h(x) then Limit g(x) = 𝑙
+
+
+limₓ→ₐ[f(x)+g(x)] = limₓ→ₐ[f(x)] + limₓ→ₐ[g(x)]
+limₓ→ₐ[f(x)-g(x)] = limₓ→ₐ[f(x)] - limₓ→ₐ[g(x)]
+limₓ→ₐ[f(x)*g(x)] = limₓ→ₐ[f(x)] * limₓ→ₐ[g(x)]
+limₓ→ₐ[f(x)/g(x)] = limₓ→ₐ[f(x)] / limₓ→ₐ[g(x)] ; if limₓ→ₐ[g(x)] ≠ 0
+limₓ→ₐ[k*f(x)] = k*limₓ→ₐ[f(x)]
+limₓ→ₐ[f(g(x))] = f(limₓ→ₐ[g(x)])
+limₓ→ₐ[f(x)] = a ; if f(x) is continuous at x=a
+
+limₓ→₀ sin⁻¹(x)/x = 1
+limₓ→₀ tan⁻¹(x)/x = 1
+limₓ→₀ aˣ = 1
+
+
+//-----------------------------------------------------------------------------
+// 7. Multivariable Calculus
+//-----------------------------------------------------------------------------
+z = f(x) = x²
+z = f(x,y) = x² + y
+⎡g(x,y)⎤   ⎡3x⎤
+⎣h(x,y)⎦ = ⎣2y⎦
+
+Spiral equation:
+       ⎡x⎤   ⎡t*cos(t)⎤
+g(t) = ⎣y⎦ = ⎣t*sin(t)⎦
+
+Circle equation:
+⎡r*cos(θ)⎤
+⎣r*sin(θ)⎦ -> polar coordinates!
+
+Torus/Donut equation (3D):
+⎡x⎤   ⎡3*cos(t) + cos(s)*cos(t)⎤
+⎢y⎥ = ⎢3*sin(t) + cos(s)*sin(t)⎥
+⎣z⎦   ⎣           sin(s)       ⎦
+The inputs span (-∞,∞), the output is contained.
+
+Formal definition of derivative:
+f′(x) = limₕ₋›₀ (f(x+h) - f(x))/h
+Derivatives represent how a small change in the inputs affects/influences the outputs, and integration is adding up an infinitely many tiny values.
+
+Total Derivative:
+df/dx;
+Partial Derivative:
+∂f/∂x.
+If y does not depend on x then:
+df/dx = ∂f/∂x, otherwise df/dx = ∂f/∂x + ∂f/∂y.∂y/∂x
+
+Formal definition of partial derivative at point (a,b):
+∂f/∂x(a, b) = lim△ₓ₋›₀ f(a+Δx,b)f(a,b)/Δx
+
+Gradient:
+∇f = ⎡∂f/∂x⎤
+     ⎢∂f/∂y⎥
+     ⎣∂f/∂z⎦
+Gives the direction of steepest ascent.
+
+Directional Derivative:
+f′ᵥ⃗ = Dᵥ⃗f = ∂ᵥ⃗f = ∇ᵥ⃗f = ∂f/∂ᵥ⃗ = v⃗.∇f
+indicates the rate of change of f in a specific direction -> slope in that direction = ∇f.v⃗/v⃗
+
+The max derivative is simply ∇f in ∇f direction.
+
+d/dt (f(t)g(t)h(t)) = f'(t)g(t)h(t) +f(t)g'(t)h(t) + f(t)g(t)h'(t) (product rule)
+If f(t) = a(b(t)) ->
+        = a'(b(t))b'(t)g(t)h(t) .... (chain rule)
+
+df(x(t),y(t))/dt = ∂f/∂x dx/dt + ∂f/∂y dy/dt (Multivariable chain rule)
+
+T = Tangent to curve = ∇f.v⃗'(t) (vector form of multivariable chain rule)
+                     = ∇f(v⃗(t)).v⃗'(t)
+Curvature k = 1/R = dT/ds
+s(t) = ⎡x(t)⎤
+       ⎣y(t)⎦
+
+s'(t) = ⎡x'(t)⎤
+        ⎣y'(t)⎦
+
+s'(t) = √(x'(t)² + y'(t)²)
+
+T = s⃗'(t)/s⃗'(t) -> dT/ds = dT/dt/ds/dt
+
+1)
+Cross product: ⎡x'⎤×⎡x''⎤=x'y'' - x''y'
+               ⎣y'⎦ ⎣y''⎦
+
+2)
+Dot product: ⎡x'⎤.⎡x''⎤=x'x'' + y''y' x
+             ⎣y'⎦ ⎣y''⎦
+
+The dot product returns a scalar number.
+⎡a⎤ ⎡d⎤
+⎢b⎥.⎢e⎥= a.d + b.d + c.f
+⎣c⎦ ⎣f⎦
+If vectors are orthogonal then v⃗.w⃗ = 0
+The angle between v⃗ and w⃗ -> cos θ = v⃗.w⃗/(v⃗*w⃗)
+The Projection of v⃗ onto w⃗ -> projᵥ⃗w⃗ = v⃗.w⃗/v⃗
+                           ->  projᵥ⃗w⃗  = (v⃗.w⃗/v⃗²)v⃗
+3)
+Cross product in 3D: v⃗×w⃗ = ⎡î ĵ ᴋ̂⎤ = |b c|    |a c|    |a b|
+                           ⎢a b c⎥   |e f|î - |d f|ĵ + |d e|ᴋ̂
+                           ⎣d e f⎦
+Where the | | is the determinant = bf - ce...
+
+A determinant can reveal if a matrix is invertible.
+
+Area of parallelogram = v⃗×w⃗, v⃗×w⃗ is perpendicular to the parallelogram.
+Volume of parallelepiped = u⃗.(v⃗×w⃗)
+
+Divergence div v⃗(x,y) = ∂P/∂x + ∂Q/∂y = ∇.v⃗
+Where:
+v⃗ = ⎡P(x,y)⎤
+    ⎣Q(x,y)⎦
+∇ = ⎢d/dx⎤
+    ⎣d/dy⎦
+
+Formal definition of divergence:
+div F(x,y,z) = lim(R(x,y,z)->0) 1/|R(x,y,z)| ∫∫𑇁ꜰ⃗.n⃗ dΣ
+
+Curl v⃗ = ∇×v⃗
+Formal definition of Curl:
+curl F(x,y,z).[ĵ,î,ᴋ̂]ᵀ = lim(|A(x,y,z).î|->0) 1/|A(x,y,z)| ∮꜀ꜰ⃗.dr⃗
+
+Laplacian Δf(x,y) = div(grad f) = ∇.∇f = ∇²f
+Helps indicate how much of a max/min the current point is. Similar to 2ⁿᵈ derivative = 0 for maxima/minima.
+
+Harmonic function is when Laplacian
+Δf(x៷) = ⎡0⎤
+         ⎢.⎥
+         ⎢.⎥
+         ⎢.⎥
+         ⎣0⎦
+
+Linearity Operation: L(a.v⃗) = a.L(v⃗); L(v⃗ + w⃗) = L(v⃗) + L(w⃗)
+
+Jacobian Matrix
+J = ⎡∂f₁/∂x₁ .... ∂f₁/∂x៷⎤
+    ⎢   .            .   ⎥
+    ⎢   .            .   ⎥
+    ⎢   .            .   ⎥
+    ⎣∂f៷/∂x₁ .... ∂f៷/∂x៷⎦
+
+Tangent planes:
+T(x,y) = f(x₀,y₀) + fₓ(x₀,y₀)(x-x₀) + fᵧ(x₀,y₀)(y-y₀)
+Where fₓ is the partial derivative
+
+Quadratic approximation:
+Q(x,y) = a + b.x + c.y + dx² + e.x.y + f.y²
+       = f(x₀,y₀) + fₓ(x₀,y₀)(x-x₀) + fᵧ(x₀,y₀)(y-y₀) + 1/2 fₓₓ(x₀,y₀)(x-x₀)² + fₓᵧ(x₀,y₀)(x-x₀)(y-y₀) + 1/2 fᵧᵧ(x₀,y₀)(y-y₀)²
+For a single variable:
+Q(x) = f(x₀) + fₓ(x₀)(x-x₀) + fₓₓ(x₀)(x-x₀)²
+
+Hessian Matrix
+Hf = ⎡∂²f/∂x₁∂x₁ .... ∂²f/∂x₁∂x៷⎤
+     ⎢     .               .    ⎥
+     ⎢     .               .    ⎥
+     ⎢     .               .    ⎥
+     ⎣∂²f/∂x៷∂x₁ .... ∂²f/∂x៷∂x៷⎦
+Vector notation:
+-> Q(x⃗) = f(x⃗₀) + ∇f(x⃗₀)ᵀ(x⃗-x⃗₀) + 1/2 (x⃗-x⃗₀)ᵀHf(x⃗₀)(x⃗-x⃗₀)
+
+Critical points: points at which the derivatives are 0 (minima, maxima, saddle point)
+
+Gradient descent is an algorithm that numerically estimates where a function outputs it's lowest values. Start at a random point and take a small step in the direction of the gradient. Step size too small and too big can cause issues. Can get stuck in local minima/maxima.
+
+Least square method:
+∫(ₐ:ⱃ) (p(x) - f(x))² ∂x
+f(x) = function to approximate
+p(x) = approximation function to f(x)
+
+∫(ₐ:ⱃ)f(x)∂x = ∑(ᵢ₌₀;៷)f(xᵢ).dxᵢ
+
+Parametrizable line integral
+∫(ₐ:ⱃ) f(x(t),y(t)) √((dx/dt)² + (dx/dt)²) ∂t = ∫(ₐ:ⱃ) f(r⃗(t)) r⃗'(t) ∂t
+ds = |r⃗'(t)|dt
+Arc length of a parametric curve: ∫(a:b) √((dx/dt)² + (dx/dt)²) ∂t = ∫(ₐ:ⱃ) |f(r⃗'(t))| ∂t
+
+Work: Magnitude of force in the direction of displacement times the distance = d⃗.F⃗
+
+Conservative vector field
+∮(c₁ + c₂)f⃗∂r⃗ = 0 (where c₁ and c₂ are 2 random curves that start and end at the same point)
+
+Fundamental theorem of line integrals/Gradient theorem
+∫(a:b) ∇f(r⃗(t)).r⃗'(t)∂x = f(r⃗(b)) - f(r⃗(a))
+-> Gradient fields are path independent
+
+Double integral
+∫∫f(x,y)∂x∂y gives volume
+
+Polar coordinates:
+∫∫(R) f.r∂θ∂r = ∫∫(R) f.dA
+∫∫∫(R) (dr)(r.dφ)(r.sin(φ)dθ) = ∫∫∫(R) dx dy dz
+
+Surface area integral: ∫∫(A) |∂r⃗/∂s * ∂r⃗/∂t| ∂s∂t
+
+Surface integral: ∫∫(T) f(v⃗(t,s)) |∂v⃗/∂s * ∂v⃗/∂t| ∂s∂t
+
+Flux through 2D surface: ∫∫𑇁 ꜰ⃗.n̂ dS ; n⃗=unit normal vector
+
+Green's theorem
+∮꜀ꜰ⃗.dr⃗ = ∫∫(R) (∂Q/∂x - ∂P/∂y) ∂x∂y ; ꜰ⃗ = P(x,y)î + Q(x,y)ĵ
+If ꜰ⃗ is conservative then ∂Q/∂x - ∂P/∂y = 0
+Green's theorem only applies around a simple closed curve C
+
+2D divergence: The equation relates the outward flux of a vector field across a simple closed curve to the double integral of the divergence over the plane region enclosed by C.
+∮꜀ꜰ⃗.n̂ ds = ∫∫(R) divꜰ⃗∂A
+
+3D divergence: The divergence theorem relates the flux of a vector field through a closed surface to the divergence of the field within the enclosed volume
+∫∫𑇁ꜰ⃗.n̂ ds = ∫∫∫(R) divꜰ⃗∂V
+
+The reason why ∂A ∂V ∂S, are used instead of ∂x∂y∂z is because you can use different coordinates systems such as cylindrical or spherical. ∂V is then a better generalization!
+
+Stokes: ∮꜀ꜰ⃗.dr⃗ = ∫∫𑇁 curl ꜰ⃗.ds⃗ = ∫∫𑇁 (curl ꜰ⃗.n̂)ds
+
+Green's theorem is a special case of Stoke's theorem where the surface is flat.
+
+//-----------------------------------------------------------------------------
+// 8. 3-Dimension
+//-----------------------------------------------------------------------------
+
+Distance formula :
+√((x₁-x₂)²+(y₁-y₂)²+(z₁-z₂)²)
+
+The 3D section formula gives the coordinates of point R dividing the segment between points P(x₁,y₁,z₁) and Q(x₂,y₂,z₂) internally in ratio as m:n
+R(x,y,z)=((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n), (mz₂+nz₁)/(m+n))
+
+Angle btw 2 line segments
+cos θ = |(a₁a₂+b₁b₂+c₁c₂)/(√(a₁²+b₁²+c₁²)√(a₂²+b₂²+c₂²))|
+
+Projection of a line segment on a line
+If P(x₁, y₁, z₁) and Q(x₂, y₂, z₂) then the projection of PQ on a line having direction cosines l, m, n is
+|l(x₂ - x₁) + m(y₂ -y₁) + n(z₂ - z₁)|
+
+Equation Of A Plane:
+General form: ax + by + cz + d = 0, where a, b, c
+Are not all zero, a, b, c, d ∈ R.
+Normal form : lx + my + nz = p
+
+Plane through the point (x₁, y₁, z₁) :
+a(x - x₁) + b(y - y₁) + c(z - z₁) = 0
+Intercept Form: x/a + y/b + z/c = 1
+
+Vector form: (r⃗-a⃗).n⃗ = 0 or r⃗.n⃗ = a⃗.n⃗
+
+Any plane parallel to the given plane ax + by + cz + d = 0 is ax + by + cz + λ = 0.
+
+Distance between ax + by + cz + d1 = 0 and ax + by + cz + d2 = 0 is =
+|d1-d2|/√(a² + b² + c²)
+
+A Plane and A Point
+(i) Distance of the point (x', y', z') from the plane ax + by + cz+ d = 0 is given by
+(ax'+by'+cz'+d)/√(a²+b²+c²)
+
+Angle Between Two Planes:
+cos θ = |(a₁a₂+b₁b₂+c₁c₂)/(√(a₁²+b₁²+c₁²)√(a₂²+b₂²+c₂²))|
+Planes are perpendicular if a₁a₂+b₁b₂+c₁c₂ = 0
+Planes are parallel if a₁/a₂=b₁/b₂=c₁/c₂
+
+
+The angle θ between the planes r⃗.n⃗₁ = d₁ and r⃗.n⃗₂ = d₂ is given by,
+cos θ = n⃗₁.n⃗₂/(|n⃗₁||n⃗₂|)
+Planes are perpendicular if n⃗₁.n⃗₂ = 0
+Planes are parallel if n⃗₁ = λ n⃗₂, λ is a scalar
+
+
+//-----------------------------------------------------------------------------
+// 9. Differential Equations
+//-----------------------------------------------------------------------------
+These are all the same: y'' + 2y' = f''(x) + 2f('x) = ∂²y/∂x² + 2∂y/∂x
+-> The solution is a function or a class of functions, whereas the solution to algebraic equations is going to be a set of numbers.
+
+If ∂y/∂x = y and y(0) = 1 -> y = eˣ is a simple solution. However not all differential equations are this easy to solve and some are impossible to solve, some have no solution.
+
+Euler Method: Use the slope to approximate the next values ∂y/∂x = y = eˣ
+x y dy/dx
+0 1 1 (At x = 0, eˣ=1, and since ∂y/∂x = y set that to the same value)
+1 2 2 (At x = 1, if slope = 1 at x = 0 then y will be 2)
+2 4 4
+This gives you an approximate linear piecewise function that approximates eˣ
+
+dy/dx = -x/(y.eˣ²) -> y.dy/dx = -x/eˣ² -> y.dy = -x/eˣ² dx -> ∫y.dy = ∫-x.e⁻ˣ² dx (-> y = e⁻ˣ²/2?) (Only true if y ≠ 0)
+
+Modeling population -> population growth proportional to population ->
+dP/dt = k.P -> ∫1/P dP = ∫k.dt -> P = ±C.eᵏᵗ -> if you know the P at 2 different times, you can calculate C and k!
+
+Newton's law of Cooling:
+dT/dt = -K(T-Tₐ)
+the rate of change of temperature should be proportional to the difference between the temperature of the object and the ambient temperature.
+-> T(t) = ±C.e⁻ᵏᵗ + Tₐ (+ -> T ≥ Tₐ; - -> T ≤ Tₐ)
+
+Logistics growth model
+For population growth you want the population to reach a limit, so as population reaches the limit you want it to dampen but as population is small it grows exponentially
+dN/dt = r.N(K-N) -> N(t) = N₀K/((K-N₀)e⁻ʳᵗ + N₀)
+
+Exact equations
+d/dx Ψ(x,y) = ∂Ψ/∂x + ∂Ψ/∂y * ∂y/∂x = Ψₓ (has the form M(x,y) + N(x,y)∂y/∂x = 0, if so it is an exact equation)
+∂²Ψ/∂x∂y = Ψₓᵧ = Ψᵧₓ =∂²Ψ/∂y∂x
+
+Homogeneous differential equations
+aₙ(x)y⁽ⁿ⁾+...+a₀(x)y⁽⁰⁾=0       // linear homogeneous ; y⁽⁰⁾=y, y⁽¹⁾=y' ...
+aₙ(x)y⁽ⁿ⁾+...+a₀(x)y⁽⁰⁾=d(x)    // linear non-homogeneous
+y⁽ⁿ⁾=f(y⁽ⁿ⁻¹⁾,...,y⁽¹⁾,y⁽⁰⁾,x)  // non linear
+
+1ˢᵗ order HDE
+Linear      y'+p(x)y=0     // homogeneous
+Linear      y'+p(x)y=d(x)  // non-homogeneous
+non-linear: y'+p(x,y)=0
+
+dy/dx = F(y/x) -> substitute v = y/x -> y = v.x
+-> dy/dx = x.dv/dx + v.dx/dx
+
+Linear 2ⁿᵈ order HDE
+a(x)y''+b(x)y'+c(x)y=d(x) (linear!)
+y''=f(x,y,y') (non-linear)
+Classical mechanics: A.y''+B.y'+C.y=0 ; [if y = g(x) is a solution then D.g(x) is a solution, and if y = h(x) is also a solution then y = D.g(x) + E.h(x) is also a solution.]
+-> y = C₁eʳ¹ˣ + C₂eʳ²ˣ is the set of all solutions. -> Need 2 initial conditions to get r₁ and r₂
+r₁,r₂ = (-B±√(B ²-4AC))/2A where r may be complex! r = λ ± μi
+-> y = e^(λx)(C₁eᵘˣⁱ + C₂e⁻ᵘˣⁱ) = e^(λx)(C₃cos(μx) + C₄sin(μx))
+
+Non homogeneous solution: A.y'' + B.y' + C.y = g(x)
+
+Laplace Transform
+Used in engineering to transform a function of time to a function of frequency.
+ℒ{f(t)} -> F(s)
+A transform will take one set of functions to another set of functions, whereas a function will to take from one set of numbers/variables to another.
+Definition: ℒ{f(t)} = ∫(₀:∞)e⁻ˢᵗf(t)∂t
+
+ℒ{eᵃᵗ} = 1/(s-a) (s>a)
+ℒ{sin(a.t)} = a/(s²-a²)
+ℒ{c.f(t) + d.g(t)} = c.ℒ{f(t)} + d.ℒ{g(t)}
+ℒ{f'(t)} = sℒ{f(t)}-f(0)
+ℒ{f''(t)} = s²ℒ{f(t)}-s.f(0)-f'(0)
+ℒ{eⁿᵗf(t)} = F(s-n) = n/sℒ{tⁿ-¹}
+ℒ{tⁿ} = n!/sⁿ⁺¹
+
+Often solving the problem in the transform domain is simpler than solving the problem in the original domain, and that is the reason why such transforms are used.
+
+Unit step function
+u꜀(t) = ⎧0 t < c    ______|‾‾‾‾‾‾
+        ⎩1 t ≥ c          c
+
+f(t) = 2 - 2.u₃(t) + 2 u₅(t) -> ‾‾‾‾_____‾‾‾‾
+clk function clk(t) = ∑(ₙ₌₀:៷) u₂ₙ₊₁(t) - u₂ₙ(t) + 1  ->  _|‾|_|‾|_|‾|_|‾|_|‾|_|‾|_|‾|_
+
+ℒ{u꜀(t)f(t)} = e⁻ˢᶜℒ{f(t)}
+
+Inverse Laplace transform
+ℒ⁻¹{F(s)} -> f(t)
+F(s) = 3!/(s-2)⁴ -> f(t) = e²ᵗt³
+You can recognize it has a familiar shape.
+
+
+Delta Dirac function
+δ(t) = ⎧∞ x = 0    ______|______
+       ⎩0 x ≠ 0          0
+Defined as having an integral of 1
+∫(-∞:∞)δ(x)dx=1
+If dᵧ(t) = ⎧ 1/(2γ)  -γ < t < γ   ______|‾‾‾‾‾‾|______
+           ⎩ 0      elsewhere         -γ      γ
+Then δ(t) = limᵧ₋›₀ ∫(-∞:∞)dᵧ(t)dt
+   Maybe another notation δ(t)for based on this would be:
+   -> δ(t) = ⎧∞  0⁻ < t < 0⁺
+             ⎩0  elsewhere
+
+A.y'' + B.y' + C.y = g(x) -> apply Laplace transform
+ℒ{A.y''} + ℒ{B.y'} + ℒ{C.y} = ℒ{g(x)} -> then solve to get
+ℒ{y} = F(s) -> then revert back/inverse transform to get y = f(t)
+
+Convolution
+(f∗g)(t) = ∫(₀:ₜ)f(t-τ)g(τ)∂τ
+ℒ{(f ∗ g)(t)} = F(s)G(s)
+Used to find back y(t) knowing Y(s) or maybe even vice versa
+(f∗g)(t) = ∫(₀:ₜ)f(t-τ)g(τ)∂τ
+
+
+//-----------------------------------------------------------------------------
+// 10. Laplace transforms
+//-----------------------------------------------------------------------------
+
+f(t)=L⁻¹{F(s)}       F(s)=L{f(t)}
+---------------------------------
+1                    1/s
+eᵃᵗ                  1/(s-a)
+tⁿ ; n ∈ ℤ          n!/(sⁿ⁺¹)
+tⁿ ; n > -1?         Γ(n+1)/(sⁿ⁺¹) ; The gamma function (represented by Γ) is the most common extension of the factorial function to complex numbers. Γ(t)=∫(₀:∞) e⁻ˣxᵗ⁻¹ dx
+√t                   √π/(2s²)
+tⁿ⁻¹ᐟ² ; n ∈ ℤ      1.3.5...(2n-1)√π/2ⁿsⁿ⁺¹
+sin(at)              a/(s²+a²)
+cos(at)              s/(s²+a²)
+t sin(at)            2as/(s²+a²)²
+t cos(at)            (s²-a²)/(s²+a²)²
+sin(at)-at.cos(at)   2a³/(s²+a²)²
+sin(at)+at.cos(at)   2as²/(s²+a²)²
+cos(at)-at.sin(at)   (s(s²-a²))/(s²+a²)²
+cos(at)+at.sin(at)   (s(s²+3a²))/(s²+a²)²
+sin(at+b)            (s sin(b) + a cos (b))/(s²+a²)
+cos(at+b)            (s cos(b) - a sin (b))/(s²+a²)
+sinh(at)             a/(s²-a²)
+cosh(at)             s/(s²-a²)
+eᵃᵗsin(bt)           b/((s-a)²+b²)
+eᵃᵗcos(bt)           (s-a)/((s-a)²+b²)
+sinh(at)             a/(s²-a²)
+cosh(at)             s/(s²-a²)
+eᵃᵗsin(bt)           b/((s-a)²+b²)
+eᵃᵗcos(bt)           (s-a)/((s-a)²+b²)
+eᵃᵗsinh(bt)          b/((s-a)²-b²)
+eᵃᵗcosh(bt)          (s-a)/((s-a)²-b²)
+u꜀(t)f(t-c)          e⁻ᶜˢF(s)
+u꜀(t)g(t)            e⁻ᶜˢ L{g(t + c)}
+eᶜᵗf(t)              F(s-c)
+tⁿf(t); n ∈ ℤ       (-1)n F(n)(s)
+1/t f(t)             ∫(ₛ:∞)F(u)du
+∫(₀:ₜ)f(t-τ)g(τ)dτ   F(s)G(s)
+f(t+T)=f(t)          (∫(₀:꛵)e⁻ˢᵗf(t)dt)/(1-e⁻ˢᵀ)
+f'(t)                sF(s)-f(0)
+f''(t)               s²F(s) - sf(0) - f'(0)
+f⁽ⁿ⁾(t)              sⁿF(s) - sⁿ⁻¹f(0) - sⁿ⁻²f'(0) ... -sf⁽ⁿ⁻²⁾(0) - f⁽ⁿ⁻¹⁾(0)
+
+
+The Laplace Transform (LT) is a generalization of the Fourier Transform (FT)
+
+Fourier Transform
+F(W) = 1/2π ∫(-∞:∞)e⁻ⁱᵂᵗf(t)dt
+Inverse
+f(t) = ∫(-∞:∞)eⁱᵂᵗF(W)dW
+
+Laplace transform
+F(S) = ∫(₀:∞)e⁻ˢᵗf(t)dt
+Inverse
+f(t) = 1/2πi ∫(ₐ₋ᵢ∞:ₐ₊ᵢ∞)eˢᵗF(S)dS
+
+
+//-----------------------------------------------------------------------------
+// 11. Differentiations
+//-----------------------------------------------------------------------------
+d/dx xⁿ=nxⁿ⁻¹
+d/dx aˣ=aˣln(a)
+d/dx eˣ = eˣ
+d/dx ln(x) = 1/x ; x ≠ 0
+d/dx logₐ(x) = 1/(x*ln(a))
+
+d/dx sin(x) = cos(x)
+d/dx cos(x) = -sin(x)
+d/dx sec(x) = sec(x)tan(x)
+d/dx csc(x) = -csc(x)cot(x)
+d/dx tan(x) = sec²(x)
+d/dx cot(x) = -csc²(x)
+
+d/dx (f(x)±g(x)) = f'(x)±g'(x)
+d/dx k*f(x)=k*d/dx f(x)
+d/dx (f(x)*g(x)) = f(x)*g'(x)+f'(x)*g(x) - Product Rule
+d/dx (f(x)/g(x)) = (-f(x)*g'(x)+f'(x)*g(x))/g²(x) - Quotient Rule
+d/dx (f(g(x))) = f'(g(x))g'(x)- Chain Rule
+
+d/dx sin⁻¹(x) =  1/√(1-x²)
+d/dx cos⁻¹(x) = -1/√(1-x²)
+d/dx tan⁻¹(x) =  1/(1+x²)
+d/dx cot⁻¹(x) =  1/(1+x²)
+d/dx sec⁻¹(x) =  1/(|x|√(x²-1)) ; x ∈ (-∞,-1)∪(1,∞)
+d/dx csc⁻¹(x) = -1/(|x|√(x²-1)) ; x ∈ (-∞,-1)∪(1,∞)
+
+Differentiation by substituting
+√(x²+a²) differentiated by substituting x = a*tan(θ) where -π/2 < θ < π/2
+√(a²-x²)                                x = a*sin(θ) where -π/2 ≤ θ ≤ π/2
+√(x²-a²)                                x = a*sec(θ) where θ ∈ [0,π], θ ≠ π/2
+√((x+a)/(a-x))                          x = a*cos(θ) where θ ∈ [0,π]
+
+Parametric differentiation
+If y = f(θ); x=g(θ) then dy/dx=(dy/dθ)/(dx/dθ)
+If y = f(x); z=g(x) then dy/dz=(dy/dx)/(dz/dx)=f'(x)/g'(x)
+
+Higher Order Derivatives
+f⁽ⁿ⁾=dⁿy/dxⁿ=y⁽ⁿ⁾=(f⁽ⁿ⁻¹⁾)′
+(u+v)⁽ⁿ⁾=u⁽ⁿ⁾+v⁽ⁿ⁾
+(u-v)⁽ⁿ⁾=u⁽ⁿ⁾-v⁽ⁿ⁾
+Leibniz's
+(uv)⁽ⁿ⁾=u⁽ⁿ⁾v-nv⁽ⁿ⁻¹⁾v⁽¹⁾+(n(n-1)/(1*2))u⁽ⁿ⁻²⁾v⁽²⁾+...+uv⁽ⁿ⁾
+(xᵐ)⁽ⁿ⁾=m!/(m-n)! xᵐ⁻ⁿ
+(xⁿ)⁽ⁿ⁾=n!
+(logₐ(x))⁽ⁿ⁾ = ((-1)ⁿ⁻¹(n-1)!)/(xⁿ*ln(a))
+(ln ₐ(x))⁽ⁿ⁾ = ((-1)ⁿ⁻¹(n-1)!)/(xⁿ)
+(aˣ)⁽ⁿ⁾=aˣlnⁿ(a)
+(eˣ)⁽ⁿ⁾=eˣ
+(aᵐˣ)⁽ⁿ⁾=mⁿaᵐˣlnⁿ(a)
+(sin(x))⁽ⁿ⁾ = sin(x + nπ/2)
+(cos(x))⁽ⁿ⁾ = cos(x + nπ/2)
+
+
+If f'(x₀)>0 then f(x) is increasing at x₀, opposite also true
+If f'(x₀)<0 then f(x) is decreasing at x₀, opposite also true
+
+f(x) has a local maximum iff there exists some interval containing x₁ such that f(x₁)≥f(x) for all x in the interval.
+f(x) has a local minimum iff there exists some interval containing x₁ such that f(x₁)≤f(x) for all x in the interval.
+A critical point occurs iff either f'(x₀) is zero or the derivative does not exits
+
+If f'(x₀)=0 and f''(x₀)<0 then f(x) has a local minima at x₀
+If f'(x₀)=0 and f''(x₀)>0 then f(x) has a local maxima at x₀
+
+f(x) is concave   upward at x₀ iff f'(x) is increasing at x₀
+f(x) is concave downward at x₀ iff f'(x) is decreasing at x₀
+
+L'Hopital Rule
+Limₓ→꜀[f(x)/g(x)]=limₓ→꜀[f'(x)/g'(x)] if limₓ→꜀[f(x)]=limₓ→꜀[g(x)]=⎧0⎫
+                                                                   ⎩∞⎭
+dy=y'dx
+f(x+Δx)=f(x)+f'(x)Δx
+Δy=f(x+Δx)-f(x)
+d(u+v)=du + dv
+d(u-v)=du - dv
+d(cu)=c du
+d(uv)=v du + u dv
+d(u/v)=(v du - u dv)/v²
+
+16ˣ × 7ˣ
+ˣ16 × ˣ7
+aˣ × aˣ
+ˣa × ˣa
+
+Multivariable functions
+Functions of 2 variables f(x,y)
+∂f/∂x=fₓ
+∂/∂x(∂f/∂x)=∂²f/∂x²=fₓₓ
+If the derivatives are continuous
+∂²f/(∂y∂x)=∂²f/(∂x∂y)
+Chain rule
+∂f/∂x=g'(h(x,y))∂h/∂x
+∂f/∂y=g'(h(x,y))∂h/∂y
+If h(t)=f(x(t),y(t)), then h'(t)=∂f/∂x dx/dt + ∂f/∂y dy/dt
+If h(s,t)=f(x(s,t),y(s,t)), then ∂h/∂t=∂f/∂x ∂x/∂t + ∂f/∂y ∂y/∂t
+                                 ∂h/∂s=∂f/∂x ∂x/∂s + ∂f/∂y ∂y/∂s
+
+Δz=∂f/∂x Δx + ∂f/∂y Δy
+Stationary points (minima, maxima, saddle)
+∂f/∂x = ∂f/∂y = 0 -> use 2ⁿᵈ derivative test to determine which one
+
+Grad ꜰ⃗ = ∇ꜰ⃗ = (∂f/∂x, ∂f/∂y, ∂f/∂z)
+Grad u⃗ = ∇u⃗ = (∂f/∂x₁, ∂f/∂x₂, ... ,∂f/∂xₙ)
+Div  ꜰ⃗ = ∇.ꜰ⃗ = ∂P/∂x + ∂Q/∂y + ∂R/∂z
+Curl ꜰ⃗ = ∇×ꜰ⃗ = (∂R/∂z - ∂Q/∂y)î + (∂P/∂x - ∂R/∂z)ĵ + (∂Q/∂y∂ - ∂P/∂x)ᴋ̂
+Laplacian operator
+∇²f = div(grad f) = ∂²f/∂x² + ∂²f/∂y² + ∂²f/∂z²
+Div (curl ꜰ⃗) = ∇.∇×ꜰ⃗=0
+Curl(grad ꜰ⃗) = ∇×∇ꜰ⃗=0
+∇.∇f=∇²f
+∇×(∇×ꜰ⃗)=∇(∇.ꜰ⃗)-∇²ꜰ⃗
+
+Function -> vector -> vector -> function
+        Grad      curl      div
+
+Div
+∇.ᴅ⃗=1/r² d/dr (r²Dᵣ) + 1/(r sin θ) d/dθ (sinθD𛱝) + 1/(r sin θ) d/dφ Dᵩ
+Grad
+∇V=dV/dr âᵣ + 1/r dV/dθ â𛱝 + 1/(r sin θ) dV/dφ âᵩ
+Curl
+∇×ʜ⃗=1/(r sin θ) (d/dφ (Hᵩsinφ) - dHᵩ/dφ)âᵣ + 1/r(1/sinθ dHᵣ/dφ - d/dr (r Hᵩ))â𛱝 + 1/r (d/dr (r Hᵩ) - dHᵣ/dθ)âᵩ
+
+
+First order ordinary differential equations
+-------------------------------------------
+
+Linear equations
+Dy/dx +p(x)y = q(x)
+y = (∫(u(x)q(x)dx+C))/(e^(∫p(x)d(x))
+
+Separable equations
+dy/dx=f(x,y)=g(x)h(y)
+∫dy/h(y)=∫(g(x)dx + C
+H(y)=G(x)+C
+
+Homogeneous Equations
+dy/dx=f(x,y) ; f(tx,ty)=f(x,y)
+Substitution z=y/x gives a separable equation
+x dz/dx + z = f(1,z)
+
+Bernoulli Equation
+dy/dx + p(x)y = q(x)yⁿ
+Substitution z=y¹⁻ⁿ gives a linear equation
+dz/dx + (1-n)p(x)z = (1-n)q(x)
+
+Riccati equation
+dy/dx = p(x)+q(x)y+r(x)y²
+If a particular solution y₁ is known, then the general solution can be obtained with the help of substitution
+z=1/(y-y₁)
+dz/dx=-[q(x)+2y₁r(x)]z-r(x)
+
+Exact equations
+M(x,y)dx + N(x,y)dy = 0 is called exact if ∂M/∂y=∂N∂x
+The general solution is
+∫M(x,y)dx + ∫N(x,y)dy = C
+
+Radioactive Decay
+dy/dt=-ky
+Where y is the amount of radioactive element at time t, k is the rate of decay
+The solution is
+y(t)=y₀e⁻ᵏᵗ, where y₀=y(0) is the initial amount
+
+Newton's Law of Cooling
+DT/dt=-k(T-S)
+Where T(t) is the temperature of an object at time t, S is the temperature of the surrounding environment, k is a positive constant.
+The solution is
+T(t)=S+(T₀-S)e⁻ᵏᵗ ; T₀=T(0) is the initial temperature of the object at time t=0
+
+Population dynamics (Logistic Model)
+DP/dt=kP(1-P/M)
+P(t) is population at time t, k is a positive constant, M is a limiting size of the population.
+The solution of the differential equation is
+P(t)=MP₀/(P₀+(M-P₀)e⁻ᵏᵗ), where P₀=P(0) is the initial population at time t = 0
+
+
+Second order ordinary differential equations
+--------------------------------------------
+
+Homogeneous Linear Equations with constant coefficients
+y''+py'+qy=0
+The characteristic equation is
+λ²+pλ+qy=0
+y=C₁eᣔ¹ˣ+C₂eᣔ²ˣ  ; λ₁ ≠ λ₂
+y=(C₁+C₂x)e⁻ᵖˣᐟ² ; λ₁ = λ₂ = -p/2
+If λ₁ ≠ λ₂ are complex
+y = eᵅˣ(C₁cosβx+C₂sinβx) ; α = -p/2 ; β = √(4q-p²)/2
+
+Inhomogeneous Linear Equations with constant coefficients
+y''+py'+qy=f(x)
+The general solution is given by
+y=yₚ+yₕ, where yₚ is a particular solution and yₕ is the general solution of the homogeneous equation done above.
+
+If f(x)=eᵅˣ(P₁(x)cosβx+P₂(x)sinβx) then the particular solution yₚ is given by
+yₚ=xᵏeᵅˣ(R₁(x)cosβx+R₂(x)sinβx) where R(x) have to be found by using the method of undetermined coefficients.
+If α + βi is not a root of the characteristic equation then k = 0
+If α + βi is a simple root of the characteristic equation then k = 1
+If α + βi is a complex root of the characteristic equation then k = 2
+
+Differential equation with y missing
+y''=f(x,y')
+Set u=y'
+u'=f(x,u) which is a first order equation
+
+Differential equation with x missing
+y''=f(y,y')
+Set u=y', since
+y''=du/dx=du/dy.dy/dx=u.du/dy
+We have
+u.du/dy=f(y,u) which is a first order equation
+
+Free undamped vibrations
+Motion of a mass on a spring
+my''+ky=0 ; m = mass, k=stiffness of spring, y=displacement
+The general solution
+y=A cos(ω₀t-δ) ; A is the amplitude of displacement; the period T = 2π/ω₀ ; δ is the phase angle of the displacement. This is an example of simple harmonic motion.
+
+Free damped vibrations
+my''+γy'+ky=0 ; γ is the damping coefficient
+There are 3 cases for the general solution
+Case 1: γ²>4km (over-damped)
+y(t)=Aeᣔ¹ᵗ+Beᣔ²ᵗ
+Where λ₁=(-γ-√(γ²-4km))/2m
+      λ₂=(-γ+√(γ²-4km))/2m
+Case 2: γ²=4km
+y(t)=(A+B)eᣔᵗ
+Where λ=-γ/2m
+Case 2: γ²<4km
+y(t)=e⁻ᵞᵗᐟ²ᵐ A cos(√(4km-γ²)t-δ)
+
+Simple Pendulum
+d²θ/dt²+gθ/L=0
+θ is the angular displacement, L is the pendulum length, g is the acceleration of gravity
+The general solution for small angles θ is θ(t)=θₘₐₓsin√(gt/L), the period is T=2π√(L/g)
+
+RLC circuit
+L.d²I/dt² + R.dI/dt + I/C = V'(t) = ωE₀cos(ωt)
+Where I is the current in an RLC circuit with an ac voltage source V(t)=E₀sin(ωt)
+
+The general solution is
+I(t)=C₁eʳ¹ˣ+C₂eʳ²ˣ+A.sin(ωt-φ)
+Where r₁,₂=(-R±√(R²-4L/C))/2L
+A = ωE₀/√((Lω²-1/C)²+R²ω²)
+φ=tan⁻¹(Lω/R - 1/RCω)
+C₁,C₂ are constants depending on initial conditions
+
+Some Partial differential Equations
+-----------------------------------
+The Laplace Equation
+∂²u/∂x² + ∂²u/∂y² = 0
+Applies to potential energy function u(x,y) for a conservative force field in the xy-plane. Partial differential equations of this type are called elliptic.
+
+The Heat Equation
+∂²u/∂x² + ∂²u/∂y² = ∂u/∂t
+Applies to the temperature distribution u(x,y) in the xy-plane when heat is allowed to flow from was areas to cool ones. The equations of this type are called parabolic
+
+The Wave equation
+∂²u/∂x² + ∂²u/∂y² = ∂²u/∂²t
+Applies to the displacement of vibrating membranes and other wave functions. The equations of this type are called hyperbolic.
+
+
+
+https://tutorial.math.lamar.edu/pdf/common_derivatives_integrals.pdf
+https://www.resonance.ac.in/sc/post/attachment/(969)-maths-gyaan-sutra-jee-main.pdf
+//-----------------------------------------------------------------------------
+// 12. Integration
+//-----------------------------------------------------------------------------
+
+∫f(x)dx = F(x) + C
+(∫f(x)dx)' = f(x)
+∫k f(x)dx = k∫f(x)dx
+
+∫[f(x)+g(x)]dx = ∫f(x)dx + ∫g(x)dx
+∫[f(x)-g(x)]dx = ∫f(x)dx - ∫g(x)dx
+∫f(ax)dx = 1/a F(ax) + C
+∫f(ax+b)dx = 1/a F(ax+b) + C
+∫f(x)f'(x)dx = 1/2 f²(x) + C
+∫f'(x)/f(x)dx = ln|f(x)| + C
+∫xᵖdx = xᵖ⁺¹/(p+1) + C ; p ≠ 1
+∫(ax+b)ᵖdx = (ax+b)ᵖ⁺¹/(a(p+1)) + C ; p ≠ 1
+∫dx/x = ln|x| + C
+∫dx/(ax+b) = ln|ax+b| + C
+∫(ax+b)/(cx+d) dx = a/c x + (bc-ad)/c² ln|cx+d| + C
+∫dx/((x+a)(x+b)) = 1/(a-b) ln|(x+a)/(x+b)| + C ; a ≠ b
+∫x.dx/(a+bx) = 1/b² (a + bx - a.ln|a+bx|) + C
+∫x².dx/(a+bx) = 1/b³ (1/2(a + bx)² - 2a(a+bx) + a²ln|a+bx|) + C
+∫dx/(x(a+bx)) = 1/a ln|(a+bx)/x| + C
+∫dx/(x²(a+bx)) = 1/ax + b/a² ln|(a+bx)/x| + C
+∫dx/(a+bx)² = 1/b² (ln|a+bx| + a/(a+bx)) + C
+∫x²dx/(a+bx)² = 1/b³ (a + bx + 2a ln|a+bx| + a²/(a+bx)) + C
+∫dx/x(a+bx)² = 1/(a(a+bx)) + 1/a² (ln|(a+bx)/x|) + C
+
+∫dx/(x²-1) = 1/2 ln|(x-1)/(x+1)| + C
+∫dx/(1-x²) = 1/2 ln|(1+x)/(1-x)| + C
+∫dx/(a²-x²) = 1/2a ln|(a+x)/(a-x)| + C
+∫dx/(x²-a²) = 1/2a ln|(x-a)/(x+a)| + C
+∫dx/(a²+x²) = 1/a tan⁻¹(x/a) + C
+∫x.dx/(a²+x²) = 1/2 ln(a²+x²) + C
+∫dx/(a+bx²) = 1/√(ab) tan⁻¹(x√(b/a)) + C ; ab>0
+∫x.dx/(a+bx²) = 1/2b ln|x²+a/b| + C
+∫dx/x(a+bx²) = 1/2a ln|x²/(a+bx²)| + C
+∫dx/x(a²-b²x²) = 1/2ab ln|(a+bx)/(a-bx)| + C
+∫dx/(a²+bx+c) = 1/√(b²-4ac) ln|(2ax+b-√(b²-4ac))/(2ax+b+√(b²-4ac))| + C ; b²-4ac > 0
+∫dx/(a²+bx+c) = 1/√(4ac-b²) tan⁻¹|(2ax+b)/√(4ac-b²)| + C                ; b²-4ac < 0
+
+∫dx/√(ax+b) = 2/a √(ax+b) + C
+∫√(ax+b)dx = 2/3a (ax+b)³ᐟ² + C
+∫x.dx/√(ax+b) = 2(ax-2b)/3a² √(ax+b) + C
+∫x√(ax+b)dx = 2(3ax-2b)/15a² (ax+b)³ᐟ² + C
+∫dx/(x+c)√(ax+b) = 1/√(b-ac) ln|(√(ax+b)-√(b-ac))/(√(ax+b)+√(b-ac))| + C ; b-ac>0
+∫dx/(x+c)√(ax+b) = 1/√(ac-b) tan⁻¹√((ax+b)/(ac-b)) + C                   ; b-ac<0
+.......
+
+Trapezoidal rule
+∫(ₐ:ⱃ)f(x)dx = (b-a)/2n [f(x₀)+f(xₙ)+2∑(ᵢ₌₁:៷₋₁)f(xᵢ)]
+
+Simpson's rule
+∫(ₐ:ⱃ)f(x)dx = (b-a)/3n [f(x₀)+4f(x₁)+2f(x₂)+4f(x₃)+2f(x₄)+...+4f(xₙ₋₁)+f(xₙ)] ; where xᵢ = a + (b-a)i/n ; i ∈ 𝕚
+
+Infinite integral
+∫(ₐ:∞)f(x)dx=limₙ→∞∫(ₐ:ₙ)f(x)dx
+
+
+Double integrals
+
+Change of variables
+u=g(x,y), v=h(x,y)
+∫∫ ཱf(x,y)dxdy=∫∫𑇁f(x(u,v),y(u,v))|∂(x,y)/∂(u,v)|du.dv
+Where J⁻¹ = |∂(x,y)/∂(u,v)| = |∂x/∂u ∂x/∂v| ≠ 0 is the Jacobian transformation
+                              |∂y/∂u ∂y/∂v|
+
+Surface integral
+x=f(u,v), y=g(u,v), z=h(u,v)
+|dꜱ⃗| = |∂r⃗/∂u×∂r⃗/∂v| = √((d(x,y)/d(u,v))² + (d(x,z)/d(u,v))² + (d(y,z)/d(u,v))²) dudv
+
+If z = f(x,y)
+A = ∫∫𑇁dꜱ⃗ = ∫∫꛵∂r⃗/∂x × ∂r⃗/∂ydxdy  ; where r⃗=(x,y,z)=(x,y,f(x,y)) ; dxdy=dᴀ⃗
+A = ∫∫꛵(1,0,∂f/∂x) × (0,1,∂f/∂y)dxdy
+A = ∫∫꛵(-∂f/∂x,-∂f/∂y,1)dxdy
+A = ∫∫꛵√((df/dx)²+(df/dy)²+1)dxdy
+
+-> |dꜱ⃗| = |(-df/dx,-df/dy,1)| = √((df/dx)²+(df/dy)²+1)dxdy
+
+Line integrals
+Green's theorem
+1) ∮ꜰ⃗₁dx+ꜰ⃗₂dy=∫∫ ཱ(∂ꜰ⃗₂/∂x-∂ꜰ⃗₁/∂y)dxdy=∫꜀ꜰ⃗.ᴛ⃗dꜱ⃗=∫꜀ꜰ⃗.dr⃗ ; ꜰ⃗ is a two-dimensional vector field ; ᴛ⃗ is the unit tangent vector to the curve
+2) ∮ꜰ⃗₁dx+ꜰ⃗₂dy ; F=F(x,y) ; x=g(t) ; y=h(t) ; dx = g'(t) ; dy = h'(t) ; C = c₁+...+cₙ
+Stokes theorem
+3) ∮៵ꜰ⃗.ᴛ⃗dꜱ⃗ = ∫∫𑇁 curl(ꜰ⃗).n⃗dꜱ⃗ ; where ɣ=∂S ; ᴛ⃗dꜱ⃗=dr⃗ ; n⃗ is the unit normal vector to the surface S
+   ∮៵ꜰ⃗.dr⃗  = ∫∫𑇁 curl(ꜰ⃗).dꜱ⃗
+   Curl ꜰ⃗ = ∇×ꜰ⃗ = (∂R/∂z - ∂Q/∂y)î + (∂P/∂x - ∂R/∂z)ĵ + (∂Q/∂y∂ - ∂P/∂x)ᴋ̂
+4) ∫៵ꜰ⃗.ᴛ⃗dꜱ⃗ = ∫៵F₁dx+F₁dy+F₁dz
+5) ∫꜀ꜰ⃗.dr⃗ if F=∇φ=(∂φ/∂x,∂φ/∂y,∂φ/∂z) ⇒ ∫꜀ꜰ⃗.dr⃗ = φ|boundary
+
+Function -> vector -> vector -> function
+        Grad      curl      div
+
+Flux and divergence
+Flux = ∫∫𑇁ꜰ⃗.n⃗dꜱ⃗
+n⃗dꜱ⃗ = dr⃗/du×dr⃗/dv dudv
+    = (-df/dx,-df/dy,1) dxdy ; z=f(x,y)
+
+Flux = ∫∫𑇁ꜰ⃗.n⃗dꜱ⃗ = ∫∫∫𐼦divꜰ⃗.dᴠ⃗ ; in 3D
+        ∫ ꜰ⃗.n⃗dꜱ⃗ =  ∫∫ divꜰ⃗.dᴀ⃗ ; in 2D
+If curl ꜰ⃗ = 0 ⇒ ꜰ⃗ = grad φ ; the gradient of a scalar field φ
+If div  ꜰ⃗ = 0 ⇒ ꜰ⃗ = curl ɢ⃗ ; the divergence of any curl of a sufficiently smooth vector field ɢ⃗ is always zero:
+
+Polar coordinates
+∫∫ ཱf(x,y)dxdy=∫(៵:ᵦ)∫(₍𛱝₎:ₕ₍𛱝₎)f(r cos θ, r sin θ) r dr dθ
+
+Type 1 Region
+∫∫dy.dx
+ /\
+/  \
+|___|
+
+Type 2 Region
+∫∫dx.dy
+
+  /‾|
+ /  \
+ \   \
+  \__|
+
+Volume of a solid
+∫∫ ཱf(x,y)dA ; z = f(x,y)
+
+Area
+A=∫∫𑇁dA=∫(៵:ᵦ)∫(₍𛱝₎:ₕ₍𛱝₎)r dr dθ
+
+Volume
+V=∫∫𑇁f(r,θ) r dr dθ
+
+Surface Area
+S=∫∫ ཱ√(1+(∂z/∂x)²+(∂z/∂y)²)dxdy
+
+Triple integral
+
+Change of variables
+∫∫∫𛱖f(x,y,z)dxdydz=∫∫∫𑇁f(x(u,v,w),y(u,v,w),z(u,v,w))|∂(x,y,z)/∂(u,v,w)|du.dv.dw
+Where |∂(x,y,z)/∂(u,v,w)| = |∂x/∂u ∂x/∂v ∂x/∂w| ≠ 0 is the Jacobian transformation
+                            |∂y/∂u ∂y/∂v ∂y/∂w|
+                            |∂z/∂u ∂z/∂v ∂z/∂w|
+
+x=r.cosθ ; y = r.sinθ ; dS=r.dr.dθ
+x=r.sinθcosф ; y = r.sinθsinф ; z=r.cosθ ; dS=r²sinθ.dr.dθ.dф
+
+Cylindrical coordinates
+dxdydz=r.dr.dθ.dz
+∫∫∫𛱖f(x,y,z)dxdydz=∫∫∫𑇁f(r.cosθ,r.sinθ,z) r.dr.dθ.dz
+
+
+Spherical coordinates
+dxdydz=r²sinθ.dr.dθ.dф
+∫∫∫𛱖f(x,y,z)dxdydz=∫∫∫𑇁f(r.sinθcosф,r.sinθsinф,r.cosθ) r²sinθ.dr.dθ.dф
+
+
+Definite Integration
+Basic Properties/Formulas/Rules
+1) ∫(ₐ:ⱃ)f(x)dx = ∫(ₐ:ⱃ)f(t)dt
+2) ∫(ₐ:ⱃ)f(x)dx = -∫(ⱃ:ₐ)f(x)dx
+3) ∫(ₐ:ⱃ)f(x)dx = ∫(ₐ:𐫶)f(x)dx + ∫(𐫶:ⱃ)f(x)dx
+4) ∫(₋ₐ:ₐ)f(x)dx = ∫(₀:ₐ)(f(x) + f(-x))dx = ⎧2∫(₀:ₐ)f(x)dx ; f(-x)= f(x)⎫
+                                            ⎩            0 ; f(-x)=-f(x)⎭
+5) ∫(ₐ:ⱃ)f(x)dx = ∫(ₐ:ⱃ)f(a+b-x)dx
+6) ∫(₀:ₐ)f(x)dx = ∫(₀:ₐ)f(a-x)dx
+7) ∫(₀:₂ₐ)f(x)dx = ∫(₀:ₐ)(f(x)+f(2a-x))dx = ⎧2∫(₀:ₐ)f(x)dx ; f(2a-x)= f(x)⎫
+                                            ⎩            0 ; f(2a-x)=-f(x)⎭
+8) If f(x) is a periodic function with period T, then
+∫(₀:ₙ꛵)f(x)dx = n∫(₀:꛵)f(x)dx ; n ∈ ℤ
+∫(ₐ:ₐ₊ₙ꛵)f(x)dx = n∫(₀:꛵)f(x)dx ; n ∈ ℤ, a ∈ ℝ
+∫(ₘ꛵:ₙ꛵)f(x)dx = (n-m)∫(₀:꛵)f(x)dx ; m,n ∈ ℤ
+∫(ₙ꛵:ₐ₊ₙ꛵)f(x)dx = ∫(₀:ₐ)f(x)dx ; n ∈ ℤ, a ∈ ℝ
+∫(ₐ₊ₙ꛵:ⱃ₊ₙ꛵)f(x)dx = ∫(ₐ:ⱃ)f(x+nT)dx = ∫(ₐ:ⱃ)f(x)dx ; n ∈ ℤ, a,b ∈ ℝ
+9) If Ψ(x) ≤ f(x) ≤ Φ(x) then
+∫(ₐ:ⱃ)Ψ(x)dx ≤ ∫(ₐ:ⱃ)f(x)dx ≤ ∫(ₐ:ⱃ)Φ(x)dx ; a ≤ x ≤ b
+10) If m ≤ f(x) ≤ M for a ≤ x ≤ b, then m(b-a) ≤ ∫(ₐ:ⱃ)f(x)dx ≤ M(b-a)
+11) If f(x) ≥ 0 on [a,b] then ∫(ₐ:ⱃ)f(x)dx≥0
+
+Leibniz Theorem : If F(x)=∫(₍ₓ₎:ₕ₍ₓ₎)f(t)dt, then dF(x)/dx = h'(x)f(h(x)) - g'(x)f(g(x))
+
+If g'(x)=f(x); then ∫f(x)dx=g(x)+c
+
+∫c*f(x)dx = c∫f(x)dx
+∫f(x)±g(x)dx=∫f(x)dx±∫g(x)dx
+∫(ₐ:ⱃ)f(x)dx=F(x)∣ₐᵇ=F(b)-F(a)
+∫(ₐ:ⱃ)c*f(x)dx = c*∫f(x)dx
+∫(ₐ:ⱃ)f(x)±g(x)dx ∫(ₐ:ⱃ)f(x)dx±∫(ₐ:ⱃ)g(x)dx
+∫(ₐ:ₐ)f(x)dx = 0
+
+
+∫(ₐ:ⱃ)dx = c(b - a), c is a constant.
+If f(x) ≥ 0 on a ≤ x ≤ b then ∫(ₐ:ⱃ)f(x)dx ≥ 0
+If f(x) ≥ g(x) on a ≤ x ≤ b then ∫(ₐ:ⱃ)f(x)dx ≥ ∫(ₐ:ⱃ)g(x)dx
+∫(ax + b)ⁿdx = (ax + b)ⁿ⁺¹/(a(n+1)) + c  ; n ≠ -1
+
+
+Polynomials
+∫dx = x + c
+∫k dx = k.x + c
+∫xⁿ dx = 1/(n + 1) xⁿ⁺¹ + c, n≠-1
+∫1/x dx = ln |x| + c
+∫x⁻¹ dx = ln |x| + c
+∫x⁻ⁿ dx = 1/(-n + 1) x⁻ⁿ⁺¹ + c, n≠1
+∫1/(ax + b) dx = 1/a ln|ax + b| + c
+∫xᵖᐟᕐ dx = 1/(p/q + 1) x⁽ᵖᐟᕐ⁾⁺¹ + c = q/(p+q) x⁽ᵖ⁺ᕐ⁾ᐟᕐ + c
+
+Trig Functions
+∫cos(ax + b)dx = 1/a sin(ax + b) + c
+∫sin(ax + b)dx = -1/a cos(ax + b) + c
+∫sec(x)tan(x)dx =  sec(x) + c
+∫csc(x)cot(x)dx = -csc(x) + c
+∫sec²(ax + b)dx = 1/a tan(ax + b) + c
+∫csc²(ax + b)dx = -1/a cot(ax + b) + c
+∫tan(ax + b)dx = -1/a ln∣cos(ax + b)∣ + c = 1/a ln∣sec(ax + b)∣ + c
+∫cot(ax + b)dx = 1/a ln∣sin(ax + b)∣ + c = -1/a ln∣csc(ax + b)∣ + c
+∫sec(x)dx = ln∣sec(x)+tan(x)∣ + c
+∫csc(x)dx = ln∣csc(x)-cot(x)∣ + c
+∫sec³(x)dx = 1/2 ( sec(x)tan(x)+ln∣sec(x)+tan(x)∣) + c
+∫csc³(x)dx = 1/2 (-csc(x)cot(x)+ln∣csc(x)-cot(x)∣) + c
+
+
+Exponential & Logarithm Functions
+∫eˣdx = eˣ + c
+∫aˣdx = aˣ/ln(a) + c
+∫ln(x)dx = x*ln(x) - x + c
+∫eᵃˣsin(bx)dx = eᵃˣ/(a²+b²) (a*sin(bx)-b*cos(bx)) + c
+∫x.eˣdx = (x-1)eˣ + c
+∫eᵃˣcos(bx)dx = eᵃˣ/(a²+b²) (a*cos(bx)+b*sin(bx)) + c
+∫1/(x*ln(x))dx = ln∣ln(x)∣ + c
+
+∫eᵃˣ⁺ᵇdx = 1/a eᵃˣ⁺ᵇ + c
+∫dᵃˣ⁺ᵇdx = 1/a dᵃˣ⁺ᵇ/ln(d) + c ; d > 0
+
+
+
+Inverse Trig Functions
+∫1/√(a²-x²)dx = sin⁻¹(x/a) + c
+∫1/(a²+x²)dx = 1/a tan⁻¹(x/a) + c
+∫1/(x√(x²-a²))dx = 1/a sec⁻¹(x/a) + c
+∫sin⁻¹(x)dx = x*sin⁻¹(x) + √(1-x²) + c
+∫tan⁻¹(x)dx = x*tan⁻¹(x) - 1/2 ln(1+x²) + c
+∫cos⁻¹(x)dx = x*cos⁻¹(x) - √(1-x²) + c
+
+Hyperbolic Functions
+∫sinh(x)dx = cosh(x)+c
+∫sech(x)tanh(x)dx = -sech(x)+c
+∫sech²(x)dx = tanh(x)+c
+∫cosh(x)dx = sinh(x)+c
+∫csch(x)coth(x)dx = -csch(x)+c
+∫csch²(x)dx = -coth(x)+c
+∫tanh(x)dx = ln(cosh(x))+c
+∫sech(x)dx = tan⁻¹∣sinh(x)∣+c
+
+Miscellaneous
+∫1/(a²-x²)dx = 1/(2a) ln∣(x+a)/(x-a)∣| + c
+∫1/(x²-a²)dx = 1/(2a) ln∣(x-a)/(x+a)∣ + c
+∫√(a²+x²)dx = x/2 √(a²+x²) + a²/2 ln∣x+√(a²+x²)∣ + c
+∫√(x²-a²)dx = x/2 √(x²-a²) - a²/2 ln∣x+√(x²-a²)∣ + c
+∫√(a²-x²)dx = x/2 √(a²-x²) + a²/2 sin⁻¹(x/a)+ c
+∫√(2ax-x²)dx = (x-a)/2 √(2ax-x²) + a²/2 cos⁻¹((a-x)/a) + c
+
+∫1/√(x²+a²)dx = ln∣x+√(x²+a²)∣ + c
+∫1/√(x²-a²)dx = ln∣x+√(x²-a²)∣ + c
+
+
+Standard Integration Techniques
+u Substitution :
+∫(ₐ:ⱃ)f(g(x))g′(x)dx = ∫(₍ₐ₎:₍ⱃ₎)f(u)du
+Using the substitution u = g(x) where du = g′(x)dx. For indefinite integrals drop the limits of integration.
+
+∫dx/(ax² + bx + c) , ∫ dx/√(ax² + bx + c) , ∫√(ax² + bx + c)dx
+Put x + b/2a = t
+
+∫dx/(a + b*sin² x) or
+∫dx/(a + b*cos² x) or
+∫dx/(a*sin² x + b sin x cos x + c*sin² x)
+Put tan x = t.
+
+∫dx/(a + b*sin x) or
+∫dx/(a + b*cos x) or
+∫dx/(a + b sin x + c*cos x)
+Put tan (x/2) = t.
+
+∫(x²+1)/(x⁴+Kx²+1) dx divide NR and DR by x² and put x ∓ 1/x = t
+∫dx/((ax+b)√(px+q)) OR ∫dx/((ax²+bx+c)√(px+q)) ; put px + q = t
+∫dx/((ax+b)√(px²+qx+1)) ; put ax + b = 1/t
+∫dx/((ax²+b)√(px²+q)) ; put x = 1/t
+
+
+Integration by Parts:
+∫     u dv = uv    -∫     v du
+∫(ₐ:ⱃ)u dv = uv∣ₐᵇ -∫(ₐ:ⱃ)v du.
+Choose u and dv from integral and compute du by differentiating u and compute v using v =∫dv.
+
+∫(f(x)g(x))dx =f(x)∫(g(x))dx - ∫(d/dx (f(x))∫(g(x))dx)dx
+
+Trig Substitutions:
+If the integral contains the following root use the given substitution and formula.
+√(a² - b²x²) ⇒ x = a/b sin(θ) and cos²(θ) = 1 - sin²(θ)
+√(b²x² - a²) ⇒ x = a/b sec(θ) and tan²(θ) = sec²(θ) - 1
+√(a² + b²x²) ⇒ x = a/b tan(θ) and sec²(θ) = 1 + tan²(θ)
+
+Partial Fractions:
+If integrating a rational expression involving polynomials, ∫P(x)Q(x)dx, where the degree (largest exponent) of P (x) is smaller than the degree of Q(x) then factor the denominator as completely as possible and find the partial fraction decomposition of the rational expression. Integrate the partial fraction decomposition (P.F.D.). For each factor in the denominator we get term(s) in the decomposition according to the following table.
+
+Factor of Q(x)          Term in P.F.D
+ Ax + b                 A /(ax + b)
+(Ax + b)ᵏ               A₁/(ax + b) + A₂/(ax + b)² + ... + Aₖ/(ax + b)ᵏ
+ Ax² + bx + c           (Ax + B)/(ax² + bx + c)
+(Ax² + bx + c)ᵏ         (A₁x + B₁)/(ax² + bx + c) + ... + (Aₖx + Bₖ)/(ax² + bx + c)ᵏ
+
+Products and (some) Quotients of Trig Functions:
+For ∫ sinⁿ(x) cosⁿ(x) dx we have the following :
+1) n odd. Strip 1 sine out and convert rest to cosines using sin²(x) = 1 - cos²(x), then use the substitution u = cos(x).
+2) m odd. Strip 1 cosine out and convert rest to sines using cos²(x) = 1 - sin²(x), then use the substitution u = sin(x).
+3) n and m both odd. Use either 1. Or 2.
+4) n and m both even. Use double angle and/or half angle formulas to reduce the integral into a form that can be integrated. For ∫ tanⁿ(x) secⁿ(x) dx we have the following :
+1) n odd. Strip 1 tangent and 1 secant out and convert the rest to secants using tan²(x) = sec²(x) - 1, then use the substitution u = sec(x).
+2) m even. Strip 2 secants out and convert rest to tangents using sec²(x) = 1 + tan²(x), then use the substitution u = tan(x).
+3) n odd and m even. Use either 1. Or 2.
+4) n even and m odd. Each integral will be dealt with differently.
+
+
+//-----------------------------------------------------------------------------
+// 13. Sequence & series
+//-----------------------------------------------------------------------------
+An arithmetic progression (A.P.):
+   a, a+d, a+2d,..., a+(n-1)d
+   tₙ = a+(n-1)d
+The sum of first n terms of A.P. Are
+Sₙ = n/2 [2a+(n-1)d] = n[a+ℓ]
+
+Arithmetic series
+Sₙ=∑(ᵢ₌₁:ₙ)i  = n(1+n)/2 ; a₁=1, aₙ=n ; Sₙ The sum of the first n terms.
+Sₙ=∑(ᵢ₌₁:ₙ)aᵢ = n(a₁+aₙ)/2
+
+Geometric series
+Sₙ=∑(ᵢ₌₀:ₙ₋₁)qⁱ=(1-qⁿ)/(1-q) ; q₀=1
+Sₙ=∑(ᵢ₌₀:ₙ₋₁)qⁱ=q₀(1-qⁿ)/(1-q)
+
+
+If a, b, c are in A.P. ⇒ 2b = a + c & if a, b, c, d are in A.P. ⇒ a + d = b + c.
+Sum of the terms of an A.P. Equidistant from the beginning & end = sum of first & last term.
+
+Geometric Progression:
+a, ar, ar², ar³, ar⁴,... Is a GP with a as the first term & r as common ratio.
+nᵗʰ term = arⁿ⁻¹
+Sum of the first n terms i.e. Sₙ = ⎧a(rⁿ-1)/(r-1) , r≠1⎫
+                                   ⎩na            , r=1⎭
+Sum of an infinite G.P. When |r| < 1 is given by
+S∞=a/(1-r)
+
+Geometric Mean = ⁿ√(x₁x₂...xₙ)
+
+Harmonic Mean (H.M.):
+If a, b, c are in H.P., b is the H.M. Between a & c, then b = 2ac/(a+c)
+H.M. H of a₁, a₂, ..., aₙ is given by 1/H =   (1/a₁ + 1/a₂ + ... + 1/aₙ)/n
+                                        H = n/(1/a₁ + 1/a₂ + ... + 1/aₙ)
+
+∑(ₓ₌₁:៷)(aₓ±bₓ) = ∑(ₓ₌₁:៷)(aₓ) ± ∑(ₓ₌₁:៷)(bₓ)
+∑(ₓ₌₁:៷)(kaₓ) = k∑(ₓ₌₁:៷)(aₓ)    ; k is constant
+
+∑(ₓ₌₁:៷)(k) = nk                 ; k is constant
+∑(ₓ₌₁:៷)(x) = n(n+1)/2
+∑(ₓ₌₁:៷)(2x) = n(n+1)
+∑(ₓ₌₁:៷)(2x+1) = n²
+∑(ₓ₌₀:៷₋₁)(x+k) = n(2k+n-1)/2
+∑(ₓ₌₁:៷)(x²) = n(n+1)(2n+1)/6
+∑(ₓ₌₁:៷)(x³) = [n(n+1)/2]²
+∑(ₓ₌₁:៷)((2x+1)²) = n(4n²-1)/3
+∑(ₓ₌₁:៷)((2x+1)³) = n²(2n²-1)
+
+∑(ₓ₌₁:∞)(1/2x) = 2
+∑(ₓ₌₁:∞)(1/x(x+1)) = 1
+∑(ₓ₌₁:∞)(1/x!) = e
+
+Convergent series
+∑(ₓ₌₁:∞)aₓ=C
+
+Comparison test
+If 0 < aₓ < bₓ and
+If ∑bₓ is convergent then ∑aₓ is also convergent
+If ∑aₓ is  divergent then ∑bₓ is also  divergent
+
+Limit comparison test
+If 0 < aₓ < bₓ and
+If limₓ→∞(aₓ/bₓ)=C then ∑(ₓ₌₁:∞)aₓ and ∑(ₓ₌₁:∞)aₓ are either both convergent or both divergent.
+If limₓ→∞(aₓ/bₓ)=0 then ∑(ₓ₌₁:∞)bₓ convergent implies that ∑(ₓ₌₁:∞)aₓ is also convergent
+If limₓ→∞(aₓ/bₓ)=∞ then ∑(ₓ₌₁:∞)bₓ  divergent implies that ∑(ₓ₌₁:∞)aₓ is also divergent
+
+p-series
+∑(ₓ₌₁:∞)(1/xᵖ) converges for p > 1 and diverges for 0 < p ≤ 1
+
+The integral test
+f(x) is continuous, positive and decreasing for all a ≥ 1
+∑(ₓ₌₁:∞)f(x) converges if ∫(₁:∞)f(x)dx converges and diverges if it → ∞ as n → ∞
+
+The ration test
+∑(ₓ₌₁:∞)aₓ is a series with positive terms
+If limₓ→∞aₓ₊₁/aₓ<1 then ∑(ₓ₌₁:∞)aₓ is convergent
+If limₓ→∞aₓ₊₁/aₓ>1 then ∑(ₓ₌₁:∞)aₓ is  divergent
+If limₓ→∞aₓ₊₁/aₓ=1 then ∑(ₓ₌₁:∞)aₓ may diverge or converge
+
+The root test
+∑(ₓ₌₁:∞)aₓ is a series with positive terms
+If limₓ→∞ˣ√aₓ<1 then ∑(ₓ₌₁:∞)aₓ is convergent
+If limₓ→∞ˣ√aₓ>1 then ∑(ₓ₌₁:∞)aₓ is  divergent
+If limₓ→∞ˣ√aₓ11 then ∑(ₓ₌₁:∞)aₓ may diverge or converge
+
+The alternating series test (Leibniz's Theorem)
+aₓ is a sequence of positive terms such that aₓ₊₁<aₓ for all x
+Limₓ→∞aₓ=0
+Then the alternative series ∑(ₓ₌₁:∞)(-1)ⁿaₓ ∑(ₓ₌₁:∞)(-1)ⁿ⁻¹aₓ both converge
+
+A series is absolutely convergent if ∑(ₓ₌₁:∞)|aₓ| is convergent, and the series ∑(ₓ₌₁:∞)aₓ is also convergent. A series is conditionally convergent if it is convergent but not absolutely convergent.
+
+Power series
+∑(ₙ₌₀:∞)(aₙxⁿ)
+∑(ₙ₌₀:∞)(aₙ(x-x₀)ⁿ)
+
+f (x)=∑(ₙ₌₀:∞)(aₙxⁿ)
+f'(x)=∑(ₙ₌₁:∞)(naₙxⁿ⁻¹)
+∫f(x)dx=∑(ₙ₌₀:∞)(aₙxⁿ⁺¹/(n+1) + C)
+
+Taylor series
+f(x)=∑(ₙ₌₀:∞) f⁽ⁿ⁾(a) ((x-a)ⁿ/n!)
+
+Maclaurin Series
+f(x)=∑(ₙ₌₀:∞) f⁽ⁿ⁾(0) (xⁿ/n!)
+
+Power series expansion
+eˣ=∑(ₙ₌₀:∞)(xⁿ/n!)
+aˣ=∑(ₙ₌₀:∞)((x ln a)ⁿ/n!)
+ln(1+x)=∑(ₙ₌₀:∞)((-1)ⁿxⁿ⁺¹/(n+1))   ; -1 < x ≤ 1
+ln((1+x)/(1-x))=∑(ₙ₌₀:∞)(2x²ⁿ⁺¹/(2n+1))   ; -1 < x < 1
+ln(x)=∑(ₙ₌₀:∞)(2/(2n+1) ((x-1)/(x+1))²ⁿ⁺¹)  ; x > 0
+cos(x)=∑(ₙ₌₀:∞)(-1)ⁿx²ⁿ/(2n)!
+sin(x)=∑(ₙ₌₀:∞)(-1)ⁿx²ⁿ⁺¹/(2n+1)!
+tan(x)=∑(ₙ₌₁:∞)(-1)ⁿ⁻¹2²ⁿ(2²ⁿ-1)B₂ₙx²ⁿ⁻¹/(2n)! ; B₂ₙ denotes Bernoulli numbers
+tan⁻¹(x)=∑(ₙ₌₁:∞)(-1)ⁿx²ⁿ⁺¹/(2n+1) ; |x| ≤ 1
+cosh(x)=∑(ₙ₌₀:∞)x²ⁿ/(2n)!
+sinh(x)=∑(ₙ₌₀:∞)x²ⁿ⁺¹/(2n+1)!
+
+Binomial series
+               ⎛n⎞
+(1+x)ⁿ=∑(ₖ₌₀:∞)⎝k⎠xᵏ  ; for n ∈ ℝ ; |x| < 1
+      ⎛n⎞
+Where ⎝k⎠ = n(n-1)...(n-k-1)/k! Is the generalized binomial coefficient.
+
+1/(1+x)=∑(ₙ₌₀:∞)(-1)ⁿxⁿ  ; |x| < 1
+1/(1-x)=∑(ₙ₌₀:∞)xⁿ  ; |x| < 1
+...
+               ⎛n⎞
+(a+b)ⁿ=∑(ₖ₌₀:∞)⎝k⎠aⁿ⁻ᵏ+bᵏ  ; for n ∈ ℤ
+⎛n⎞
+⎝k⎠ = n!/k!(n-k)! Also known as "n choose k"
+
+
+Fourier series
+f(x)=a₀/2 + ∑(ₙ₌₁:∞)(aₙ cos nx + bₙ sin nx)
+aₙ=1/π ∫(-π:π)f(x)cos(nx)dx
+bₙ=1/π ∫(-π:π)f(x)sin(nx)dx
+
+Fourier series
+x(t)=∑(ₖ₌₋∞:∞)aₖe⁻ʲᵏᵚ⁰ᵗ ; w₀=2π/T ; j is the same as the imaginary i ; "jw" can be replaced by s
+aₖ=1/T ∫꛵x(t)e⁻ʲᵏᵚ⁰ᵗdt
+represents the Exponential Fourier Series representation of a periodic signal x(t) with period T.
+Fourier transform
+x(t) = 1/2π ∫(-∞:∞)X(jw)eʲᵚᵗdw
+X(jw)=∫(-∞:∞)x(t)e⁻ʲᵚᵗdt
+
+
+
+//-----------------------------------------------------------------------------
+// 14. Complex numbers
+//-----------------------------------------------------------------------------
+Equality In Complex Numbers:
+z₁ = z₂  ⇒ Re(z₁) = Re(z₂) & Im(z₁) = Im(z₂).
+
+The argument of a complex number is the angle (θ), measured in radians
+Properties of arguments
+(1) arg(z₁z₂) = arg(z₁) + arg(z₂) + 2mπ for some integer m.
+(2) arg(z₁/z₂) = arg(z₁) - arg(z₂) + 2mπ for some integer m.
+(3) arg(z₂) = 2arg(z) + 2mπ for some integer m.
+(4) arg(z) = 0 ⇔ z is a positive real number
+(5) arg(z) = ± π/2 ⇔ z is purely imaginary and z ≠ 0
+
+Properties of conjugate
+|z| = |z̅|
+zz̅ = |z|² = x² + y²
+z̅₁̅+̅z̅₂̅ = z̅₁̅ + z̅₂̅
+z̅₁̅z̅₂̅ = z̅₁̅ z̅₂̅
+z̅₁̅/̅z̅₂̅ = z̅₁̅ / z̅₂̅  ; z₂ ≠ 0
+|z₁+z₂|² = (z₁+z₂)(z̅₁̅+̅z̅₂̅) = |z₁|²+|z₂|²+z₁z̅₂+|z̅₁+z₂|²
+(z̅)ᶜ = z
+|z₁z₂|=|z₁||z₂|
+|zⁿ|=|z|ⁿ
+
+Distance = |z₂-z₁|
+
+iⁿ=1ⁿ(cos(π/2+2kπ)n+isin(π/2+2kπ)n)
+
+If w = f(z), then w̅ = f(z̅)
+If ∠PQR = θ ->
+(z₃-z₂)/(z₁-z₂) = |(z₃-z₂)/(z₁-z₂)|eⁱᶱ
+
+Cube Root Of Unity :
+(1)The cube roots of unity are 1, (-1+i√3)/2 , (-1-i√3)/2
+(2)If ω is one of the imaginary cube roots of unity then 1 + ω + ω² = 0.
+In general 1 + ωr + ω²ʳ = 0; where r ∈ I but is not the multiple of 3.
+
+Distance formula : |z₁ - z₂|.
+Section formula :
+z = (mz₂+nz₁)/(m+n) (internal division)
+z = (mz₂-nz₁)/(m-n) (external division)
+(1)amp(z) = θ is a ray emanating from the origin inclined at an angle θ to the x-axis.
+(2)|z-a| = |z-b| is the perpendicular bisector of the line joining a to b.
+(3)If |z - z₁|/|z - z₂| = k ≠ 1, 0, then locus of z is circle.
+
+https://drive.uqu.edu.sa/_/quc_physics/files/1300%20Math%20Formulas%20by%20Golden%20Art.pdf
+a = r cos θ ; b = r sin θ
+Polar representation of complex numbers
+a + bi = r (cos θ + sin θ)
+r = √(a²+b²)      modulus
+θ = arctan (b/a)  argument
+arctan = tan ⁻¹
+Inverse of a complex number in polar representation
+1/(r(cos θ + i sin θ)) = 1/r [cos -θ + i sin -θ]
+
+Quotient of complex number
+z₁/z₂= (r₁(cos θ₁ + i sin θ₁))/(r₂(cos θ₂ + i sin θ₂)) = r₁/r₂ [cos θ₁-θ₂ + i sin θ₁-θ₂]
+
+Power of a complex number
+zⁿ=rⁿ[cos nθ + i sin nθ]
+
+De Moivre Theorems
+If n is any integer then
+(cos θ + i sin θ)ⁿ = cos nθ + i sin nθ
+(cos θ₁ + i sin θ₁)(cos θ₂ + i sin θ₂)(cosθ₃ + i sin θ₃)...(cos θₙ + i sin θₙ)
+   = cos(θ₁ + θ₂ + θ₃ + ... θₙ) + i sin (θ₁ + θ₂ + θ₃ + ... + θₙ)
+
+ⁿ√z=ⁿ√r [cos((θ+2πk)/n) + i sin((θ+2πk)/n)]   ; k ∈ ℤ
+
+Euler's Formula: eⁱˣ=cos(x) + i sin(x)
+
+cosθ=(eⁱᶱ+e⁻ⁱᶱ)/2
+sinθ=(eⁱᶱ-e⁻ⁱᶱ)/2
+
+
+//-----------------------------------------------------------------------------
+// 15. Primes, factors
+//-----------------------------------------------------------------------------
+In general, for any composite number C, which can be expressed as C = am × bn × cp× …, where a, b, c, … are all prime factors and m, n, p are positive integers, then: Number of factors is equal to (m + 1) (n + 1)(p + 1) …
+
+If N is not a perfect square, Number of ways of writing N as a product of two factors = 1/2 {(p + 1) (q + 1) (r + 1) ....}
+
+If N is a perfect square, No. Of ways in which N can be expressed as a product of two different factors =
+   1/2 {(p + 1) (q + 1) (r + 1) .... - 1 } ways
+And as a product of two factors =
+   1/2 {(p + 1) (q + 1) (r + 1) .... + 1 } ways
+
+Sum of the factors of
+N = ((aᵖ⁺¹-1)/(a-1)) ((bᕐ⁺¹-1)/(b-1)) ((cʳ⁺¹-1)/(c-1))...
+
+Totient function is given by
+ф(N) = N(1-1/a)(1-1/b)(1-1/c)...
+Here ф(N) is the number of numbers less than and prime to N. If P is some other natural number which is prime to N, then the remainder when P𝇉⁽ᴺ⁾ is divided by N is 1
+A totient (specifically Euler's totient function, ф(N)) counts the number of positive integers less than or equal to a given integer n that are relatively prime to n, meaning they share no common factors other than 1.
+
+Sum of numbers less than and co-prime to a number N = ф(N)*N/2
+
+Number of ways of writing a number N as a product of two co-prime numbers = 2n-1 where, n is the number of prime factors of a number
+
+Product of all the factors of N = N (Number of factors / 2) = N ((p 1).(q 1).(r 1).../2)
+
+
+//-----------------------------------------------------------------------------
+// 16. Inequalities
+//-----------------------------------------------------------------------------
+If a > b, then b < a
+If a > b, then a - b > 0
+If a > b, then 0 > b - a
+If a > b, then a + c > b + c
+If a > b, then a - c > b - c
+If a > b and c > d, then a + c > b + d
+If a > b and c > d, then a - d > b - c
+If a > b and m > 0, then ma > mb
+If a > b and m > 0, then a/m > b/m
+If a > b and m < 0, then ma < mb
+If a > b and m < 0, then a/m < b/m
+If 0 < a < b and n > 0 then aⁿ<bⁿ
+If 0 < a < b and n < 0 then aⁿ>bⁿ
+If 0 < a < b then ⁿ√a<ⁿ√b  ;  a¹ᐟⁿ<b¹ᐟⁿ
+√(ab) ≤ (a+b)/2 ; a > 0 ; b > 0 ; only equal if a = b
+a + 1/a ≥ 2 ; a > 0 ; equality at a = 1
+(abcde...z)¹ᐟⁿ ≤ (a+b+c+...+z)/n  ; a,b,c,d... > 0
+If ax+b > 0 and a > 0, then x > -b/a
+If ax+b > 0 and a < 0, then x < -b/a
+|a+b|≤|a|+|b|
+If |x| < a then -a<x<a ; a > 0
+If |x| > a then x < -a and a < x ; a > 0
+If x²<a then |x|<√a ; a > 0
+If x²>a then |x|>√a ; a > 0
+If f/g > 0 then f.g>0 and g ≠ 0
+If f/g < 0 then f.g<0 and g ≠ 0
+
+Quadratic inequality
+If (x+3)(x-4)>0 then x < -3 or x > 4
+If (x+3)(x-4)<0 then -3 < x < 4
+   \ |   /
+0___\|_ /___
+  -3 \ / 4
+     |‾
+     0
+
+Find the values of 𝑝 and 𝑞 for which x < -3 or x > 2 is the solution set of x² + 𝑞 > -𝑝x.
+Step 1: x < -3 or x > 2
+Step 2: (x + 3)(x - 2) > 0 (Reverse and Form Back Original)
+Step 3: x² + x - 6 > 0 (Expand)
+Step 4: x² - 6 > -x (Rearrange according to question)
+Step 5: 𝑞 = -6, 𝑝 - 1 (Compare coefficient)
+
+
+For any a, b ∈ R
+|a| ≥ 0
+|a| = |-a|
+|a| ≥ a
+|a| ≥ -a
+|ab| = |a||b|
+|a/b| = |a|/|b|
+|a + b| ≤ |a| + |b|
+|a - b| ≥ ||a| - |b||
+
+Modulus of a Complex Number |z| = √(a² + b²)
+
+
+//-----------------------------------------------------------------------------
+// 17. Linear Algebra - Matrices
+//-----------------------------------------------------------------------------
+Span {v⃗₁,...,v⃗ₙ} = c₁v⃗₁+...+cₙv⃗ₙ
+If a set {v⃗₁,...,v⃗ₙ} is a linearly independent set ⇒ Null{[v⃗₁ ... v⃗ₙ]} = 0
+   ⇔ c₁v⃗₁+...+cₙv⃗ₙ = 0 for some c₁...cₙ ≠ 0
+The set {v⃗₁,...,v⃗ₙ} is a basis for V if 1) it spans V, 2) the set is linearly independent.
+
+The four fundamental subspaces
+The nullspace N(A)
+The column space C(A) or R(A) (or range space)
+The row space C(Aᵀ)
+The cokernel N(Aᵀ)
+
+The intersection of U∩V
+U={u⃗₁,...,u⃗ₙ}
+U={v⃗₁,...,v⃗ₙ}
+[v⃗₁ ... v⃗ₙ | c₁u⃗₁ ... cₙu⃗ₙ] ; check if they are linearly independent. Use row operations: then determine conditions on c₁,...,cₙ
+U∩V = [c₁u⃗₁+...+cₙu⃗ₙ]
+
+Column space
+A = {v⃗₁ ... v⃗ₙ}
+C(A) = span {v⃗₁,...,v⃗ₙ} = c₁v⃗₁+...+cₙv⃗ₙ -> put into reduced echelon form
+
+Orthogonal complement
+= cokernel = Null(Aᵀ)
+
+Gram-shmidt
+Used to get an orthogonal basis
+v⃗₁=u⃗₁
+v⃗ₙ=u⃗ₙ-∑(ᵢ₌₀:ₙ₋₁)<v⃗ᵢ,u⃗ₙ>/<v⃗ᵢ,v⃗ᵢ> v⃗ᵢ ; where <v⃗,u⃗> denotes the dot product of the vectors u⃗ and v⃗.
+v⃗ₙ=u⃗ₙ-∑(v⃗ᵢ.u⃗ₙ/v⃗ᵢ.v⃗ᵢ) v⃗ᵢ
+v⃗ₙ=u⃗ₙ-∑(ᵢ₌₀:ₙ₋₁)projᵤᵢ(v⃗ₙ)
+-> orthonormal basic w⃗ₙ=v⃗ₙ/v⃗ₙ
+
+Projection of a⃗ onto b⃗
+If b⃗=projₐ⃗(u⃗)=<a⃗,u⃗>/<u⃗,u⃗>u⃗ ; then c⃗=a⃗-b⃗ is orthogonal to u⃗
+
+|c⃗  /a⃗
+|  /
+| /
+|/___b⃗____u⃗
+
+L=span(A)
+Lᗮ=cokernel(A)=Null(Aᵀ)
+
+Orthogonal projection
+A(AᵀA)⁻¹Aᵀ
+
+Least square problem
+If Ax⃗=b⃗ has no solutions then the best approximation is the solution to
+AᵀAx⃗=Aᵀb⃗
+
+Markov chain
+If x₀=c₁v⃗₁+c₂v⃗₂
+xₖ=c₁λ₁ᵏv⃗₁+c₂λ₂ᵏv⃗₂ ; eigenvalues?
+
+Symmetric   A=Aᵀ
+Orthogonal  AAᵀ=I
+Hermitian   H=H*=H̅ᵀ̅
+Unitary     UU*=I
+Orthogonally diagonalizable   A=QDQᵀ ; Q is an orthonormal basis of eigenvectors of A
+   ⇔ A is symmetric
+
+Spectral decomposition
+A=λ₁U₁U₁ᵀ+...+λₙUₙUₙᵀ ; where {u⃗₁,...,u⃗ₙ} is orthonormal basis of eigenvectors
+
+Quadratic form
+ ⎛x₁⎞           ⎛x₁⎞
+Q⎝x₂⎠=(x₁,x₂)[A]⎝x₂⎠
+Can tell if all eigenvalues are positive/negative/both.
+The min and max of Q(x) are attained at the eigenvectors of the min and max eigenvalues.
+
+Change of basis
+V has basis {v⃗₁,...,v⃗ₙ}, U has basis {u⃗₁,...,u⃗ₙ}
+T: V → W ; A is a matrix that takes from V → W
+A = [[T(v⃗₁)]𐫶 ... [T(v⃗ₙ)]𐫶] ᵤ instead of 𐫶?  -> [Iₙ|Pᵤ˿ᵥ]
+Q(x) = x⃗ᵀAx⃗ = (P⁻¹x)ᵀD(P⁻¹x)
+
+Jordan Block
+⎡λ 1 0 ... 0⎤
+⎢0 λ 1 ... 0⎥
+⎢0 0 λ ... 0⎥ = Bᵢ
+⎢0 0 0 ... 0⎥
+⎣0 0 0 ... λ⎦
+⎡[B₁]    ⎤
+⎢  ...   ⎥ = J
+⎣    [Bₙ]⎦
+A=CJC⁻¹
+Columns of C are strings of generalized eigenvectors
+[A-λI]v⃗₂=v⃗₁
+[A-λI|v⃗₁]
+2 Matrices are similar if they have the same Jordan form
+
+Cayley-Hamilton theorem
+f(x)= bₘxᵐ+bₘ₋₁xᵐ⁻¹+...+b₀x⁰
+If f(x) = f(λ)=det(A-λI) -> f(A) = Cf(J)C⁻¹ = 0
+eᵗᴬ=CeᵗᴶC⁻¹
+⎡[eᵗᴮ¹]    ⎤
+⎢   ...    ⎥ = eᵗᴶ
+⎣    [eᵗᴮ¹]⎦
+B=λI+N ; eᵗᴮ=eᣔᵗeᵗᴺ ; eᵗᴺ=I+tN/1!+t²N²/2!+t³N³/3!+...
+
+
+Linear Algebra
+--------------
+Speed is a scalar, velocity is vector
+
+    ⎡1⎤       ⎡0⎤
+î = ⎣0⎦ ; ĵ = ⎣1⎦ -> v⃗=a.î + b.ĵ
+
+General line:
+A set L = {x⃗ + t.y⃗ | t ∈ ℝ}
+
+Line parametrization
+    ⎧⎡a⎤    ⎡c⎤⎫
+L = ⎩⎣b⎦ + t⎣d⎦⎭ -> x = a + c.t; y = b + d.t
+
+Span is the space/set of all vectors that can be represented by linear combinations of vectors. 2 independent vectors can span all of ℝ².
+If a⃗ = k.b⃗ then the span is a line
+
+Linear independence
+If N vectors span N space
+Dependent iff ∑(ₙ₌₀:∞) cₙv⃗ₙ = ₀⃗ for some non-zero cₙ
+
+Definition: 𝐕 is a subspace of ℝᴺ if (1) 𝐕 contains ₀⃗ (2) closure under multiplication -> if x⃗ is in 𝐕 then c.x⃗ is in 𝐕 (3) closure under addition -> a⃗ and b⃗ are in 𝐕-> a⃗ + b⃗ is in 𝐕
+
+Basis is the minimum set of vectors that are linearly independent that spans the space/subspace.
+
+Vector addition
+⎡a⎤   ⎡c⎤   ⎡a + c⎤
+⎣b⎦ + ⎣d⎦ = ⎣b + d⎦
+
+Scalar multiplication
+  ⎡a⎤   ⎡c.a⎤
+c.⎣b⎦ = ⎣c.b⎦
+
+Dot product
+a⃗.b⃗ = ∑(ₙ₌₁:៷)aₙbₙ = scalar
+
+Length = √(a⃗.a⃗)
+Commutative a⃗.b⃗ = b⃗.a⃗
+Distributive (a⃗ + c⃗).b⃗ = a⃗.b⃗ + c⃗.b⃗
+Associative (c.a⃗).b⃗ = c(a⃗.b⃗)
+
+Cauchy-shwarz inequality
+|a⃗.b⃗| ≤ a⃗.b⃗; if = then a⃗ = c.b⃗
+
+Vector triangle inequality
+a⃗+b⃗ ≤ a⃗+b⃗
+
+Angle btw vectors
+a⃗-b⃗ = a⃗²+b⃗² - 2a⃗b⃗cosθ
+‾‾‾‾‾‾v‾‾‾‾‾‾‾‾‾‾   ‾‾‾‾‾v‾‾‾‾‾
+Right angle        not right angle
+
+-> a⃗.b⃗ = a⃗b⃗cosθ
+If a⃗.b⃗ = 0 -> orthogonal
+
+Plane A.x + B.y + C.z = D
+If n⃗ is normal to plane -> then if a⃗ is on plane then n⃗.a⃗=0
+
+Cross product (only defined in 3D and 7D!?)
+      ⎡a₂b₃ - b₂a₃⎤
+a⃗×b⃗ = ⎢a₃b₁ - b₃a₁⎥ = n⃗ -> n⃗.a⃗=0 and n⃗.b⃗=0
+      ⎣a₁b₂ - b₁a₂⎦
+
+a⃗×b⃗=a⃗b⃗sinθ = area of parallelogram!
+
+Triple product expansion
+a⃗(b⃗×c⃗)=b⃗(a⃗.c⃗)-c⃗(a⃗.b⃗)
+
+Point distance to plane
+d = (A.x₀ + B.y₀ + C.z₀ - D) / √(A² + B² + C²)
+
+Matrix
+Reduced row echelon form
+    ⎡1  2  1  1 | 7 ⎤    ⎡1  2  0  3 | 2⎤
+A = ⎢1  2  2 -1 | 12⎥ -> ⎢0  0  1 -2 | 5⎥ = rref(A)
+    ⎣2  4  0  6 | 4 ⎦    ⎣0  0  0  0 | 0⎦ -> infinite solutions ! ; [0  0  0  0 | 4] -> no solutions!
+3 Equations, 4 variables -> solution = line?
+
+Solving matrices is the same as solving algebraic equations!
+
+Multiplication of a Matrix with a vector
+A.x⃗ = b⃗
+
+Nullspace
+A.x⃗ = ₀⃗; if only solution is x⃗ = ₀⃗ then they are linearly independent.
+If a transformation squishes a 3D space to a plane, this is called the nullspace/kernel
+
+Column space is the span of vectors of A. C(A) = span(x⃗₁, ..., x⃗៷)
+N(A) = N(rref(A))
+A basis for C(A) spans A and are linearly independent
+Every basis has the same number of elements.
+
+The column space tells you where the vectors land. It is the set of all possible outputs.
+₀⃗ is always in the column space.
+
+Non square matrices represent transformations btw different dimensions.
+
+The solutions to A.x⃗ = ₀⃗ is the same as rref(A).x⃗ = 0
+
+Function
+A function is a relationship between the members of one set and the members of another set. f: X -> Y
+f: domain -> codomain  ; ℝ->ℝ ℝ²->ℝ³ ℝ²->ℝ
+f(x) = x² <=> ℝ->ℝ²
+Range: subset of codomain that the function actually maps to.
+
+Transformation
+A function operating on vectors: T(v⃗ₙ) = u⃗ₘ
+A transformation T: ℝⁿ->ℝᵐ is linear if (1) T(a⃗ + b⃗) = T(a⃗) + T(b⃗) (2) T(c.a⃗) = c.T(a⃗)
+
+Transformations gives the feeling of squishing and moving space itself.
+
+Matrix multiplication are equivalent to a linear transformation.
+T(x⃗) = A.x⃗
+
+Identity Matrix:
+     ⎡1 0 0⎤
+I₃ = ⎢0 1 0⎥
+     ⎣0 0 1⎦
+
+Rotations
+rotθ(x+y) = rotθ(x)+rotθ(y)
+
+              ⎡cosθ -sinθ⎤
+2D rotθ = A = ⎣sinθ  cosθ⎦
+
+              ⎡1       0      0⎤
+3D rotθ = A = ⎢0    cosθ  -sinθ⎥
+              ⎣0    sinθ   cosθ⎦
+
+Unit vector
+Vector with a length of 1
+u⃗=1
+u⃗=v⃗/v⃗
+
+Projections
+projₗ(x⃗) = c.v⃗ = (x⃗.v⃗/v⃗.v⃗)v⃗
+
+Compositions
+T⋅S(x⃗) = B(Ax⃗) = (BA)x⃗
+Distributive A(B+C) = AB + CD
+Associative H⋅(G⋅F) = (H⋅G)⋅F
+AB ≠ BA
+
+Inverse of a function
+F⁻¹⋅F = I = F⋅F⁻¹ ; F⁻¹ is unique
+
+Surjective every y ∈ Y ∃ at least 1 x ∈ X such that f(x) = y
+Injective  every y ∈ Y ∃  at most 1 x ∈ X such that f(x) = y
+Invertible every y ∈ Y ∃   a unique x ∈ X such that f(x) = y
+Invertible = both surjective and injective
+
+-> conditions to determine if surjective
+   For any b ∃ at least one solution to A.x⃗ = b⃗ where x ∈ ℝ
+   [A|x⃗] -> [rref(A)|c⃗] has a pivot entry in every row
+-> conditions to determine if injective
+   At most 1 solution to A.x⃗ = b⃗
+-> conditions to determine if invertible
+   Only invertible if rref(A) = Iₙₓₙ
+   T⁻¹⋅T = I = T⋅T⁻¹
+
+Rank(A) = number of pivot entries in rref(A)
+        = # of dimensions in the output transformation
+
+Deriving inverse
+[A|I] -> [I|A⁻¹]
+                    ⎡ d -b⎤
+2x2: A⁻¹ = 1/det(A) ⎣-c  a⎦
+
+N×N determinant det(A៷ₓ៷) = a₁₁det(A₁₁) ± ... ± a₁ₙdet(A₁ₙ)
+                          = ∑(ᵢ₌₀:៷) (-1)ⁱ⁺ʲ aᵢⱼ det(Aᵢⱼ) = |A៷ₓ៷|
+
+The determinant represents by how much the area/volume of the transformation has shrunk/grown, it is 0 if it squishes everything to a line/point. Negative determinant is like inverting/flipping over the orientation of the plane/space.
+
+det(kA) = kⁿdet(A)
+If you swap rows: det(S) = det(A).(-1)^(number of swaps)
+
+If you have duplicate rows -> det(A) = 0
+
+Area = |det(A)|
+
+Transpose
+aᵢⱼ -> aⱼᵢ (works for any m×n)
+det(Aᵀ) = det(A)
+(AB)ᵀ = BᵀAᵀ
+(ABC)ᵀ = CᵀBᵀAᵀ
+(A+B)ᵀ = Aᵀ+Bᵀ
+(Aᵀ)⁻¹ = (A⁻¹)ᵀ
+v⃗.w⃗          =  v⃗ w⃗
+Dot product     matrix product
+Rank(A) = rank(Aᵀ)
+
+AᵀA is invertible
+
+Orthogonal complement
+Of V: Vᗮ = {x⃗ ∈ ℝ | x⃗.v⃗ = 0 for every v⃗ ∈ V}
+C(A)ᵀ = R(A) is the orthogonal complement of the nullspace N(A)
+N(A) = (C(A)ᵀ)ᗮ ; N(Aᵀ) = C(A)ᗮ = Vᗮ
+If y⃗ = v⃗ + w⃗ where v⃗ ∈ V and w⃗ ∈ Vᗮ -> projᵥy⃗ = v⃗ and projᵥᗮy⃗ = w⃗
+N(A)⊥C(A)ᵀ
+
+projᵥ(x⃗) = A(AᵀA⁻¹)Aᵀ x⃗ -> projection matrix = A(AᵀA⁻¹)Aᵀ
+
+Distance
+Distance = x⃗ - projᵥ(x⃗) ≤ x⃗ - v⃗
+projᵥ(x⃗) is the shortest distance to x⃗
+
+Coordinates with respect to a basis
+                 ⎧⎡1⎤,⎡0⎤⎫
+Standard basis = ⎩⎣0⎦,⎣1⎦⎭
+Basis may not always be standard...
+Orthonormal basis: v⃗ᵢ = 1 ; v⃗ᵢ.v⃗ⱼ = 0 for i != j
+In orthonormal basis: projᵥ(x⃗) = AAᵀx⃗
+Orthonormal matrices preserve angles and lengths.
+
+Gram Schmidt process: convert non-orthonormal basis to orthonormal.
+u⃗₁=v⃗₁/v⃗₁
+u⃗₂=(v⃗₂-projᵤ₁v⃗₂)/v⃗₂-projᵤ₁v⃗₂
+u⃗₃=(v⃗₃-projᵤ₁v⃗₃-projᵤ₂v⃗₃)/v⃗₃-projᵤ₁v⃗₃-projᵤ₂v⃗₃
+...
+
+Eigenspace={[span eigenvalues]}
+If T(v⃗) = λv⃗ -> v⃗ is an eigenvector for T and A, λ is an eigenvalue associated with that eigenvector.
+   T(v⃗) = λv⃗ = Av⃗
+-> provides interesting basis vectors (simpler computationally or better coordinates systems)
+λv⃗ = Av⃗ -> det(λI - A) = 0 -> n-polynomial to solve -> at most n solutions
+(λI - A)v⃗ = 0 -> solve nullspace to find eigenvectors
+
+Most vectors do not remain on their own lines after a transformation but some special vectors do and simply get stretched/shrunk. These are called eigenvectors and the amount they get stretched by is the eigenvalue.
+                                        ⎡2 0⎤
+In a matrix that scales everything by 2 ⎣0 2⎦, the only eigenvalue is 2 and every vector is an eigenvector!
+
+In a 3D rotation, the eigenvector are the axis of rotation and eigenvalue=1.
+
+Axioms of Linear Algebra
+1) u⃗ + (v⃗ + w⃗) = (u⃗ + v⃗) + w⃗
+2) v⃗ + w⃗ = w⃗ + v⃗
+3) ₀⃗ + v⃗ = v⃗
+4) v⃗ +(-v⃗) = ₀⃗
+5) a(b v⃗) = (a b)v⃗
+6) 1 v⃗ = v⃗
+7) a(v⃗ + w⃗) = a v⃗ + a w⃗
+8) (a + b) v⃗ = a v⃗ + b v⃗
+
+Iterative numerical techniques for solving systems of linear equations (Ax=B) by generating successively better approximations, starting from an initial guess.
+Jacobi Iteration
+Gauss Seidal Iteration
+Successive over relaxation
+Newton Iteration
+
+Jacobi Iteration
+    ⎛0   0   0⎞
+L = ⎜a₂₁ 0   0⎟
+    ⎝a₃₁ a₃₂ 0⎠
+    ⎛0   a₁₂ a₁₃⎞
+U = ⎜0   0   a₂₃⎟
+    ⎝0   0   0  ⎠
+    ⎛a₁₁ 0   0  ⎞
+D = ⎜0   a₂₂ 0  ⎟
+    ⎝0   0   a₃₃⎠
+    ⎛a₁₁ a₁₂ a₁₃⎞
+A = ⎜a₂₁ a₂₂ a₂₃⎟
+    ⎝a₃₁ a₃₂ a₃₃⎠
+A = D + L + U
+
+
+//-----------------------------------------------------------------------------
+// 18. Sets
+//-----------------------------------------------------------------------------
+
+Laws of Algebra of sets (Properties of sets):
+(1) Commutative law : (A∪B) = B∪A ; A∩B = B∩A
+(2) Associative law:(A∪B) ∪ C = A ∪ (B∪C) ; (A∩B) ∩ C = A ∩ (B∩C)
+(3) Distributive law : A ∪ (B∩C) = (A∪B) ∩ (A∪C) ; A ∩ (B∪C) = (A∩B) ∪ (A∩C)
+(4) De Morgan law : (A∪B)' = A' ∩ B' ; (A∩B)' = A' ∪ B'
+(5) Identity law : A∩U = A ; A ∪ ф = A
+(6) Complement law : A∪A' = U, A∩A' = ф, (A')' = A
+(7) Idempotent law : A∩A = A, A∪A = A
+
+law of contraposition for inclusion.
+A⊂B ⇔ Bᶜ⊂Aᶜ
+A⊆B ⇔ Bᶜ⊆Aᶜ
+(⋃(ᵢ₌₀:ₙ)Eᵢ)ᶜ=⋂(ᵢ₌₀:ₙ)(Eᵢᶜ) ; De Morgan's
+
+
+If A, B, C are finite sets and U be the finite universal set then
+(1) n(A∪B) = n(A) + n(B) - n(A∩B)
+(2) n(A - B) = n(A) - n(A∩B)
+(3) n(A∪B∪C) = n(A) + n(B) + n(C) - n(A∩B) - n(B∩C) - n (A∩C) + n(A∩B∩C)
+(4) Number of elements in exactly two of the sets A, B, C = n(A∩B) + n(B∩C) + n(C∩A) - 3n(A∩B∩C)
+(5) Number of elements in exactly one of the sets A, B, C = n(A) + n(B) + n(C) - 2n(A∩B) - 2n(B∩C) - 2n(A∩C) + 3n(A∩B∩C)
+
+(1) Void relation : Let A be a set. Then ф ⊆ A × A and so it is a relation on A. This relation is called the void or empty relation on A.
+(2) Universal relation : Let A be a set. Then A × A ⊆ A × A and so it is a relation on A. This relation is called the universal relation on A.
+(3) Identity relation : Let A be a set. Then the relation IA = {(a, a) : a ∈ A} on A is called the identity relation on A. In other words, a relation IA on A is called the identity relation if every element of A is related to itself only.
+(4) Reflexive relation : A relation R on a set A is said to be reflexive if every element of A is related to itself. Thus, R on a set A is not reflexive if there exists an element a ∈ A such that (a, a) ∉ R. Note : Every identity relation is reflexive but every reflexive relation in not identity.
+(5) Symmetric relation : A relation R on a set A is said to be a symmetric relation
+Iff (a, b) ∈ R ⇒ (b ,a) ∈ R for all a, b ∈ A.
+i.e. a R b ⇒ b R a          for all a, b ∈ A.
+(6) Transitive relation : Let A be any set. A relation R on A is said to
+Be a transitive relation
+Iff (a, b) ∈ R and (b, c) ∈ R ⇒ (a, c) ∈ R for all a, b, c ∈ A
+i.e. a R b and b R c ⇒ a R c
+For all a, b, c ∈ A
+(7) Equivalence relation : A relation R on a set A is said to be an equivalence relation on A iff
+   (A) it is reflexive  i.e. (a, a) ∈ R for all a ∈ A
+   (B) it is symmetric  i.e. (a, b) ∈ R ⇒ (b, a) ∈ R for all a, b ∈ A
+   (C) it is transitive i.e. (a, b) ∈ R and (b, c) ∈ R ⇒ (a, c) ∈ R for all a,b∈A
+
+
+//-----------------------------------------------------------------------------
+// 19. Permutations & Combinations
+//-----------------------------------------------------------------------------
+
+Arrangement: number of permutations of n different things taken r at a time =
+ⁿPᵣ = n(n-1)(n-2)...(n-r+1) = n!/(n-r)!
+Circular Permutation: The number of circular permutations of n different things taken all at a time is (you fix one item and arrange the n-1 remaining items; (n-1)!
+
+Selection : Number of combinations of n different things taken r at a time =
+ⁿCᵣ=n!/(r!(n-r)!)=ⁿPᵣ/r!
+
+Selection of one or more objects
+(a) Number of ways in which at least one object be selected out of 'n' distinct objects is
+ⁿC₁+ⁿC₂+ⁿC₃+...+ⁿCₙ = 2ⁿ-1 (because each of the 'n' objects has two choices (select or reject), giving 2ⁿ total possibilities, and we subtract the one case where no objects are selected)
+(b) Number of ways in which at least one object may be selected out of 'p' alike objects of one type, 'q' alike objects of second type and 'r' alike of third type is
+(p + 1) (q + 1) (r + 1) -1
+(c) Number of ways in which at least one object may be selected from 'n' objects where 'p' alike of one type, 'q' alike of second type and 'r' alike of third type and rest n - (p + q + r) are different, is
+(p + 1)(q + 1)(r + 1)2ⁿ⁻⁽ᵖ⁺ᕐ⁺ʳ⁾ - 1
+
+Let N = pᵃqᵇrᶜ... Where p, q, r... Are distinct primes & a, b, c... Are natural numbers then:
+(a) The total numbers of divisors of N including 1 & N is
+= (a + 1) (b + 1) (c + 1)...
+(b) The sum of these divisors is = (p⁰ + p¹ + p² +.... + pᵃ) (q⁰ + q¹ + q² +.... + qᵇ) (r⁰ + r¹ + r² +... + rᶜ)..
+(c) Number of ways in which N can be resolved as a product of two factors is
+1/2 (a+1)(b+1)(c+1)... If N is not a perfect square
+1/2 [(a+1)(b+1)(c+1)...+1] if N is a perfect square
+(d) Number of ways in which a composite number N can be resolved into two factors which are relatively prime (or coprime) to each other is equal to 2ⁿ⁻¹ where n is the number of different prime factors in N.
+
+De-arrangement:
+Number of ways in which 'n' letters can be put in 'n' corresponding envelopes such that no letter goes to correct envelope is n!(1-1/1!+1/2!-1/3!+...+(-1)ⁿ1/n!)=n!∑(ₖ₌₀:ₙ)(-1)ᵏ/k!
+
+Permutations ⁿPₘ
+Combinations ⁿCₘ
+
+ⁿPₘ = n!/(n-m)!
+      ⎛n⎞
+ⁿCₘ = ⎝m⎠ = n!/m!(n-m)!
+ⁿCₘ = ⁿCₙ₋ₘ
+ⁿCₘ + ⁿCₘ₊₁ = ⁿ⁺¹Cₘ₊₁ (Pascal's identity)
+
+Pascal's triangle
+            1
+          1   1
+        1   2   1
+      1   3   3   1
+    1   4   6   4   1
+  1   5  10  10   5   1
+1   6  15  20  15   6   1
+          ....
+It can be modelled in terms of combinations
+          ⎛0⎞
+          ⎝0⎠
+        ⎛1⎞ ⎛1⎞
+        ⎝0⎠ ⎝1⎠
+      ⎛2⎞ ⎛2⎞ ⎛2⎞
+      ⎝0⎠ ⎝1⎠ ⎝2⎠
+    ⎛3⎞ ⎛3⎞ ⎛3⎞ ⎛3⎞
+    ⎝0⎠ ⎝1⎠ ⎝2⎠ ⎝3⎠
+  ⎛4⎞ ⎛4⎞ ⎛4⎞ ⎛4⎞ ⎛4⎞
+  ⎝0⎠ ⎝1⎠ ⎝2⎠ ⎝3⎠ ⎝4⎠
+⎛5⎞ ⎛5⎞ ⎛5⎞ ⎛5⎞ ⎛5⎞ ⎛5⎞
+⎝0⎠ ⎝1⎠ ⎝2⎠ ⎝3⎠ ⎝4⎠ ⎝5⎠
+
+Pascal's identity
+⎛n⎞   ⎛ n ⎞   ⎛n+1⎞
+⎝k⎠ + ⎝k+1⎠ = ⎝k+1⎠
+
+Hockey Stick Identity
+⎛j⎞   ⎛j+1⎞         ⎛n⎞   ⎛n+1⎞   ⎛ j ⎞
+⎝k⎠ + ⎝ k ⎠ + ... + ⎝k⎠ = ⎝k+1⎠ - ⎝k+1⎠
+
+Choosing Odd even identity
+             ⎛n⎞        ⎛n-1⎞
+∑(ₖ₌₀:ₘ)(-1)ᵏ⎝k⎠ = (-1)ᵐ⎝ m ⎠
+
+
+ⁿPᵣ=n!/(n-r)!
+ⁿCᵣ=n!/((n-r)!r!)
+ⁿCᵣ=ⁿCₙ₋ᵣ
+
+Binomial theorem:
+               ⎛n⎞
+(a+b)ⁿ=∑(ₖ₌₀:∞)⎝k⎠aⁿ⁻ᵏ+bᵏ ; set a = b = 1 ; -> ⁿC₀+...+ⁿCₙ=2ⁿ
+
+Number of ways of distributing 'n' identical things among 'r' persons such that each person may get any number of things = ⁿ⁺ʳ⁻¹Cᵣ₋₁
+
+If out of n things, p are exactly alike of one kind, q exactly alike of second kind and r exactly alike of third kind and the rest are different, then the number of permutations of n things taken all at a time = n!/(p!q!r!)
+
+Total number of ways in which a selection can be made by taking some or all out of (p+q+r+....) items where p are of one type, q are of second type and r are of another type and so on = {(p+1)(q+1)(r+1)...}-1
+
+The number of ways in which (m+n) things can be divided into two groups containing m and n things respectively = (m+n)!/(m!n!)
+
+
+Statement of Binomial theorem:
+If a, b ∈ R and n ∈ N, then
+(a+b)ⁿ = ⁿC₀aⁿb⁰ + ⁿC₁aⁿ⁻¹b¹ + ⁿC₂aⁿ⁻²b² +...+ ⁿCᵣaⁿ⁻ʳbʳ +...+ ⁿCₙa⁰bⁿ
+       = ∑(ᵣ₌₀:ₙ) ⁿCᵣaⁿ⁻ʳbʳ
+
+Properties of Binomial Theorem:
+Tᵣ₊₁ = ⁿCᵣaⁿ⁻ʳbʳ ; Tᵣ₊₁ is the (r+1)ᵗʰ term ; ⁿCᵣ is the binomial coefficient ; aⁿ is the first term and bⁿ is the last term.
+
+If n is even, there is only one middle term, which is ((n+2)/2)ᵗʰ term
+If n is odd, there are two middle term, which are ((n+1)/2)ᵗʰ and (((n+1)+1)/2)ᵗʰ terms.
+
+Multinomial Theorem:
+(x₁ + x₂ + x₃ + ... + xₖ)ⁿ = ∑(ᵣ₁+ᵣ₂+...+ᵣₙ=ₙ) n!/(r₁!r₂!...+rₙ!) x₁ʳ¹x₂ʳ²...+xₖʳᵏ
+Total number of terms in the expansion = ⁿ⁺ᵏ⁻¹Cₖ₋₁
+
+Coefficient of xʳ in expansion of (1-x)⁻ⁿ is ⁿ⁺ʳ⁻¹Cᵣ ; (n ∈ N)
+
+Binomial Theorem For Negative Integer Or Fractional Indices
+(1+x)ⁿ = 1 + nx + n(n-1)x²/2! + n(n-1)(n-2)x³/3! + .... + n(n-1)(n-2)...(n-r+1)xʳ/r! + ...
+       ; |x| < 1.
+
+Tᵣ₊₁=n(n-1)(n-2)...(n-r+1)xʳ/r!
+
+
+//-----------------------------------------------------------------------------
+// 20. Probability
+//-----------------------------------------------------------------------------
+
+Probability of an event = Number of favourable outcomes / Number of all possible outcomes
+
+The probability of E not occurring, denoted by P(not E) or P(E̅) = 1 - P(E)
+
+Odds in favour = Number of favourable cases / Number of unfavourable cases
+
+Odds against = Number of unfavourable cases / Number of favourable cases
+
+If two events are said to be mutually exclusive then if one happens, the other cannot happen and vice versa. In other words, the events have no simultaneous occurrence.
+
+P(A∪B)=P(A or B) ; P(A∩B)=P(A and B)
+
+If A, B are mutually exclusive then P(A∩B) = 0
+If A, B are independent then P(A∩B) = P(A)P(B)
+                             P(A∪B) = P(A)+P(B)
+                             P(A/B)=P(A)
+                             P(B/A)=P(B)
+
+Range of possible values
+0 ≤ P(A) ≤ 1
+Certain event P(A)=1
+Impossible event P(A)=0
+Complement P(A̅)=1-P(A)
+
+Law of total probability
+P(A)=∑(ᵢ₌₀:៷)P(Bᵢ)P(A/Bᵢ)
+
+Addition theorem of probability:
+P(A∪B) = P(A) + P(B) - P(A∩B)
+
+De Morgan's Laws:
+(a) (A∪B)ᶜ = Aᶜ∩Bᶜ
+(b) (A∩B)ᶜ = Aᶜ∪Bᶜ
+
+Distributive Laws :
+(a) A ∪ (B∩C) = (A∪B) ∩ (A∪C)
+(b) A ∩ (B∪C) = (A∩B) ∪ (A∩C)
+
+(1) P(A or B or C) = P(A) + P(B) + P(C) - P(A∩B) - P(B∩C) - P(C∩A) + P(A∩B∩C)
+(2) P(at least two of A, B, C occur) = P(B∩C) + P(C∩A) + P(A∩B) - 2P(A∩B∩C)
+(3) P(exactly two of A, B, C occur) = P(B∩C) + P(C∩A) + P(A∩B) - 3P(A∩B∩C)
+(4) P(exactly one of A, B, C occur) = P(A) + P(B) + P(C) - 2P(B∩C) - 2P(C∩A) - 2P(A∩B) + 3P(A∩B∩C)
+
+Conditional Probability : P(A/B) = P(A∩B)/P(B)
+P(A∩B)=P(A/B)P(B)=P(B/A)P(A)
+
+Binomial Probability Theorem
+If an experiment is such that the probability of success or failure does not change with trials, then the probability of getting exactly r success in n trials of an experiment is ⁿCᵣpʳqⁿ⁻ʳ, where 'p' is the probability of a success and q is the probability of a failure. Note that p + q = 1.
+
+Binomial distribution function PMF (PDF is for continuous functions, PMF for discreet)
+                   ⎛n⎞
+b(n,p,q)=ⁿCᵣpʳqⁿ⁻ʳ=⎝r⎠pʳqⁿ⁻ʳ
+μ=np, σ²=npq ; q = (p-1)
+
+Expectation :
+If a value xᵢ is associated with a probability of pᵢ, then the expectation is given by Σpᵢxᵢ
+
+Binomial Probability Distribution:
+(1) Mean of any probability distribution of a random variable is given by :
+μ = Σpᵢxᵢ/Σpᵢ = Σpᵢxᵢ = np
+n = number of trials
+p = probability of success in each probability
+q = probability of failure
+(2) Variance of a random variable is given by,
+σ² = Σ(xᵢ-μ)²pᵢ = Σpᵢxᵢ² - μ² = npq
+     Σ(xᵢ-μ)²pᵢ = Σxᵢ²pᵢ - 2μΣxᵢpᵢ + μ²Σpᵢ = Σpᵢxᵢ² - μ²
+
+
+Bayes' Theorem:
+P(B/A)=P(A/B).P(B)/P(A)
+
+Bayes' Formula:
+If an event A can occur with one of the n mutually exclusive and exhaustive events B₁, B₂, .., Bₙ and the probabilities P(A/B₁), P(A/B₂) ... P(A/Bₙ) are known, then
+P(Bᵢ/A) = P(Bᵢ)P(A/Bᵢ)/(∑(ᵢ₌₀:៷)P(Bᵢ)P(A/Bᵢ))
+Bᵢ is a set of mutually exclusive events (hypotheses)
+A is the final event
+P(Bᵢ) are the prior probabilities
+P(Bᵢ/A) are the posterior probabilities.
+A = (A∩B₁) ∪ (A∩B₂) ∪ (A∩B₃) ∪ ... ∪ (A∩Bₙ)
+P(A) = P(A∩B₁) + P(A∩B₂) + ... + P(A∩Bₙ) = ∑(ᵢ₌₀:៷)P(A∩Bᵢ)
+
+Normal Density Function - PDF
+Describes the bell-shaped, symmetric curve of the Normal Distribution
+PDF = φ(x)=1/σ√2π e⁻⁽ˣ⁻ꭟ⁾ᐟ²ᣙ
+Where x is a particular outcome
+
+Standard Normal Density Function (fixed mean of 0 and standard deviation of 1)
+PDF = φ(x)=1/√2π e⁻ˣᐟ²
+Average μ = 0, average deviation σ = 1
+
+Standard Z Value
+Z = (X-μ)/σ
+
+Cumulative Normal Distribution Function - CDF
+A CDF gives the probability that a random variable from a normal (bell-shaped) distribution falls below or at a specific value, calculated by integrating its Probability Density Function (PDF) from negative infinity up to that point
+F(x)=1/σ√2π ∫(-∞:ₓ)e⁽ᵗ⁻ꭟ⁾ᐟ²ᣙdt
+P(α<X<β)=F((α-μ)/σ) - F((β-μ)/σ)
+P(|X-μ|<ε)=2F(ε/σ)
+
+Cumulative Distribution Function - CDF
+F(x)=P(X<x)=∫(-∞:ₓ)f(t)dt
+
+Bernoulli trials Process
+PMF = f(x) = pᴷ(1-p)ᴺ⁻ᴷ ; μ=p ; σ²=pq ; q = (1-p)
+Bernoulli is a binomial distribution with a single event N.
+
+
+Geometric distribution (not the same as Geometric Mean)
+PMF = P(X=x)=(1-p)ˣ⁻¹p ; represents the probability that the first success occurs on the -th trial in a sequence of independent Bernoulli trials
+CDF = P(X≤x)=1-(1-p)ˣ
+μ=1/p, σ²=q/p²
+Where T is the first successful event in the series
+j is the event number
+
+Poisson Distribution - PMF
+Describes the distribution of binary data from an infinite sample. (for example in a period of time)
+              ⎛N⎞
+P(X=K)=lim៷₋›∞⎝K⎠(λ/N)ᴷ(1-(λ/N))ᴺ⁻ᴷ = λᴷe⁻ᶺ/K!
+1) Events are random and independent
+2) The mean is known and assumed constant.
+λ=np ; μ=λ ; σ²=λ ; The probability of exactly k events occurring in a fixed interval.
+λ is the rate of occurrences
+k is the number of positive outcomes
+
+Probability that x falls between a and b
+P(a≤X≤b)=∫(ₐ:ⱃ)f(x)dx
+
+Continuous Uniform Density - PDF
+f=1/(b-a) ; a ≤ x ≤ b ; 0 elsewhere
+μ=(a+b)/2
+Where f is the final density function
+
+Exponential Probability Density Function - PDF
+f(t)=λe⁻ᣔᵗ ; μ=λ ; σ²=λ²
+t is time, λ is failure rate
+
+
+
+Expected Value of discrete random variables
+μ=E(X)=∑(ᵢ₌₀:៷)pᵢxᵢ
+Expected Value of continuous random variables
+μ=E(X)=∫(-∞:∞)xf(x)dx
+
+Properties of Expectations
+E(X+Y)=E(X)+E(Y)
+E(X-Y)=E(X)-E(Y)
+E(cX)=cE(X)
+E(XY)=E(X)E(Y)
+
+E(X²)=V(X)+μ² ; μ=E(X) is the expected value ; V(X) is the variance
+
+Markov inequality
+P(X>k) ≤ E(X)/k
+
+Chebyshev inequality
+P(|X-m|≥a)≤σ²/a²
+
+Variance of discrete random variables
+σ²=V(X)=E[(X-μ)²]=∑(ᵢ₌₀:៷)(xᵢ-μ)²pᵢ
+
+Variance of continuous random variables
+σ²=V(X)=E[(X-μ)²]=∫(-∞:∞)(x-μ)²f(x)dx
+
+Properties of Variance
+V(X+Y)=V(X)+V(Y)
+V(X-Y)=V(X)-V(Y)
+V(cX)=c²V(X)
+V(X+c)=V(X)
+
+Standard Deviation
+D(X)=√(V(X))=√(E[(X-μ)²])
+
+Covariance
+cov(X,Y)=E[(X-μ(X))(Y-μ(Y))]=E(XY)-μ(X)μ(Y)
+X is random variable
+
+Correlation
+ρ(X,Y)=cov(X,Y)/√(V(X)V(Y))
+
+Probability moments measure the shape and characteristics of a distribution, specifically raw moments (E[Xⁿ]) and central moments (E[(X-μ)ⁿ])
+Moments can be derived from the MGF, defined as M𐺔(t)=E[eᵗᕽ]
+E[Xⁿ]=∑ᵢxᵢⁿp(X=xᵢ)    ; discreet
+E[Xⁿ]=∫(-∞:∞)xⁿf(x)dx ; continuous
+
+moment theorem
+E[Xⁿ]=dⁿ/dsⁿ M𐺔(s)|ₛ₌₀
+
+A characteristic function in probability theory, denoted as Φ𐺔(t)=E[eⁱᵗᕽ], is a complex-valued function that uniquely defines the probability distribution of any random variable X. It represents the Fourier transform (with sign reversal) of the probability density function
+
+
+https://pages.cs.wisc.edu/~tdw/files/cookbook-en.pdf
+Discrete Distributions        CDF                           PMF               μ           σ²                MGF/PGF
+            Notation          F𐺔(x)                         f𐺔(x)             𝔼[X]       𝕍[X]             M𐺔(s)
+                              ⎧0                x < a
+Uniform     Unif {a,...,b}    ⎨(|x|−a+1)/(b−a)  a ≤ x ≤ b   I(a<x<b)          (a+b)       ((b−a+1)²−1)      (eᵃˢ−e⁻⁽ᵇ⁺¹⁾ˢ)
+                              ⎩1                x > b       /(b−a+1)          /2          /12               /s(b−a)
+Bernoulli   Bern(p)           (1−p)¹⁻ˣ                      pˣ(1−p)¹⁻ˣ        p           p(1−p)            1−p+peˢ
+                                                            ⎛n⎞
+Binomial    Bin(n,p)          I₁₋ₚ(n−x,x+1)                 ⎝x⎠pˣ(1−p)ⁿ⁻ˣ     np          np(1−p)           (1−p+peˢ)ⁿ
+
+Multinomial Mult(n,p)         N/A?     n!/x₁!..xₖ!p₁ˣ¹..pₖˣᵏ∑(ᵢ₌₁:ₖ)xᵢ=n      npᵢ         npᵢ(1−pᵢ)         (∑(ᵢ₌₀:ₖ)pᵢeˢⁱ)ⁿ
+                                                            ⎛m⎞⎛m-x⎞ ⎛N⎞
+Hypergeometric Hyp(N,m,n)     ≈Φ((x−np)√np(1−p))            ⎝x⎠⎝n-x⎠/⎝x⎠      nm/N        nm(N−n)(N−m)/N²(N−1)   N/A?
+                                                            ⎛x+r+1⎞
+Negative Binomial NBin(r,p)   Iₚ(r,x+1)                     ⎝ r-1 ⎠pʳ(1-p)ˣ   r(1−p)/p    r(1−p)/p²         (p/(1−(1−p)eˢ))ʳ
+
+Geometric   Geo(p)            1−(1−p)ˣ;x∈ℕ+                p(1−p)ˣ⁻¹;x∈ℕ+   1/p         (1−p)/p²          p/(1−(1−p)eˢ)
+
+Poisson     Po(λ)             e⁻ᣔ∑(ᵢ₌₀:ₓ)λⁱ/i!              λˣe⁻ᣔ/x!          λ           λ                 eᣔ⁽ᵉˢ⁻¹⁾
+
+
+
+Continuous Distributions      CDF                           PDF               μ           σ²                MGF
+            Notation          F𐺔(x)                         f𐺔(x)             𝔼[X]       𝕍[X]             M𐺔(s)
+                              ⎧0                x < a
+Uniform     Unif {a,b}        ⎨(x−a)/(b−a)      a < x < b   I(a<x<b)          (a+b)       ((b−a)²−1)        (eˢᵇ−eˢᵃ)
+                              ⎩1                x > b       /(b−a)            /2          /12               /s(b−a)
+Normal      N(µ,σ²)           Φ(x)=∫(-∞:ₓ)φ(t)dt            φ(x) = 1/σ√2π     μ           σ²                exp{µs+σ²s²/2}
+                                                            Exp{−(x−µ)²/2σ²}
+Log-Normal  ln N(µ,σ²)        1/2+1/2 erf[(ln(x)−µ)/√(2σ²)] 1/(x√(2πσ²))      eꭟ⁺ᣙᐟ²     (eᣙ−1)e²ꭟ⁺ᣙ     N/A?
+                              erf: Error Function       *exp{−(ln(x)−µ)²/(2σ²)}
+Multivariate Normal MVN(µ,Σ)  N/A?                          (2π)⁻ᵏᐟ²|Σ|⁻¹ᐟ²   µ           Σ                 exp{µᵀs+1/2 sᵀΣs}
+                                                            *e^(−1/2 (x−µ)ᵀΣ⁻¹(x−µ))
+Student's t Student(ν)        Iₓ(ν/2,ν/2)           Γ((ν+1)/2)/(√(νπ)Γ(ν/2))  0           0                 N/A?
+                                                            *(1+x²/ν)⁻⁽ᵛ⁺¹⁾ᐟ²
+Chi-square  χₖ²               1/(Γ(k/2)) γ(k/2,x/2)         1/(2ᵏᐟ²Γ(k/2))    k           2k                (1−2s)⁻ᵏᐟ² s<1/2
+                                                            *xᵏᐟ²⁻¹e⁻ˣᐟ²
+F           F(d₁, d₂)         I𑚤ₓ៸₍𑚤ₓ₊𑚤₎(d₁/2,d₁/2)      √((((d₁x)ᵈ¹d₂ᵈ²)/(d₁x+d₂)ᵈ¹⁺ᵈ²)/(xB(d₁/2,d₁/2)) N/A?
+                                                                              d₂/(d₂−2)   2d₂²(d₁+d₂−2)/(d₁(d₂−2)²(d₂ − 4))
+Exponential Exp(β)            1−e⁻ˣᐟᵝ                       1/β e⁻ˣᐟᵝ         β           β²                1/(1−βs) (s<1/β)
+
+Gamma       Gamma(α,β)        γ(α,x/β)/Γ(α)                 1/(Γ(α)βᵅ)        αβ          αβ²               (1/(1−βs))ᵅ
+                                                            *xᵅ⁻¹e⁻ˣᐟᵝ                                      *(s<1/β)
+Inverse Gamma InvGamma(α,β)   Γ(α,β/x)/Γ(α)                 βᵅ/Γ(α)xᵅ⁻¹e⁻ᵝᐟˣ  β/(α−1)     β²/((α − 1)²      2(−βs)ᵅᐟ²/Γ(α)
+                                                                              α>1         /(α − 2)²) α>2    *K៵(√(−4βs))
+Dirichlet   Dir(α)            Γ(∑(ᵢ₌₁:ₖ)αᵢ)/(∏(ᵢ₌₁:ₖ)Γ(αᵢ)) αᵢ/(∑(ᵢ₌₁:ₖ)αᵢ    𝔼[Xᵢ](1−𝔼[Xᵢ]) N/A?         N/A?
+                              *∏(ᵢ₌₁:ₖ)xᵢᵅⁱ⁻¹                                 /∑(ᵢ₌₁:ₖ)αᵢ+1
+Beta        Beta(α,β)         Iₓ(α,β)                       Γ(α+β)/Γ(α)Γ(β)   α/(α+β)     αβ           1+∑(ᵢ₌₁:ₖ)(∏(ᵣ₌₀:ₖ₋₁)
+                                                            *xᵅ⁻¹(1−x)ᵝ⁻¹            /((α+β)2(α+β+1))  *(α+r)/(α+β+r)) sᵏ/k!
+Weibull     Weibull(λ,k)      1−e⁻⁽ˣᐟᣔ⁾ᵏ                   k/λ (x/λ)ᵏ⁻¹      λΓ(1+1/k)   λ²Γ(1+2/k)−µ²     ∑(ₙ₌₀:∞)sⁿλⁿ/n!
+                                                            *e⁻⁽ˣᐟᵏ⁾ᵏ                                      *Γ(1+n/k)
+Pareto      Pareto(xm, α)     1−(xₘ/x)ᵅ x≥xm                αxₘᵅ/xᵅ⁺¹ x≥xm    αxm/(α−1)   xₘᵅ/((α−1)²(α−2)) α(−xₘs)ᵅ
+                                                                              α>1         α > 2             *Γ(−α,−xₘs) s<0
+
+
+//-----------------------------------------------------------------------------
+// 21. Statistics
+//-----------------------------------------------------------------------------
+
+Sample mean - Sample arithmetic mean
+x̅ = ∑(ᵢ₌₀:ₙ)xᵢ/n
+xᵢ: Represents each individual value in the dataset.
+n: The total number of values in the sample.
+If frequencies are also added
+x̅ = ∑(ᵢ₌₀:ₙ)fᵢxᵢ/n
+
+Sum of deviation of variate (random variable) from their AM Is always zero that is
+∑(xᵢ-x̅) = 0.
+xᵢ: Individual data points in a sample.
+x̅: The arithmetic mean (average) of the data set.
+
+Sum of Squared Differences/Deviation
+∑(xᵢ-x̅)²
+Population Variance
+σ² = ∑(xᵢ-μ)²/n
+Sample Variance
+sₓ² = ∑(xᵢ-x̅)²/(n-1) ; sample statistics uses x̅ and s instead of μ and σ
+sᵧ² = ∑(yᵢ-y̅)²/(n-1) ; the lowercase x or y in sₓ in the sample variance notation (or for standard deviation) is used to specify that the calculation is being done on a specific sample data set.
+
+If x̅ is the sample mean of variate xᵢ then
+weighted mean WM = x̅ = ∑λᵢxᵢ/∑λᵢ ; n is the total frequency = ∑λᵢ = λ
+λᵢ are the weights assigned to each data point xᵢ.
+AM of (xᵢ + λ) = x̅  + λ
+AM of λᵢxᵢ = λx̅
+AM of (axᵢ + b) = ax̅  + b
+
+Median = ⎧((n+1)/2)ᵗʰ term                     (when n is odd )⎫
+         ⎩Mean of (n/2)ᵗʰ and (n/2 + 1)ᵗʰ term (when n is even)⎭
+
+Mode
+In a frequency distribution the mode is the value of that variate which have the maximum frequency.
+In symmetric distribution, mean = mode = median
+In skew (moderately asymmetrical) distribution, median divides mean and mode internally in 1 : 2 ratio.
+⇒  median = (2(Mean) + (Mode))/3
+
+Range
+Difference of extreme values / sum of extreme values = (L-S)/(L+S)
+Where L = largest value and S = smallest value
+
+Mean deviation :
+Mean deviation = ∑(ᵢ₌₀:៷)|xᵢ-A|/n
+Mean deviation = ∑(ᵢ₌₀:៷)fᵢ|xᵢ-A|/n (for frequency distribution)
+
+Sample variance :
+sₓ² = Σ(xᵢ-x̅)²/N = Σxᵢ²/N - x̅²
+      Σ(xᵢ-x̅)²/N = (Σxᵢ² - 2Σxᵢx̅ + Σx̅²)/N
+                 = (Σxᵢ² - 2x̅Σxᵢ + Nx̅²)/N
+                 = (Σxᵢ² - 2x̅.Nx̅ + Nx̅²)/N
+                 = Σxᵢ²/N - x̅²
+
+Coefficient of SD = σ/x̅
+Coefficient of variation = σ/x̅ * 100 (in percentage)
+
+Properties of variance :
+(1) var(xᵢ + λ) = var(xᵢ) ; adding a constant to a random variable shifts the entire distribution but does not change the spread (variance) of the data points around the mean
+(2) var(λxᵢ) = λ²(var(xᵢ))
+(3) var(axᵢ + b) = a²(var(xᵢ)) ; Where λ, a, b are constant.
+
+Population measures
+Mean μ=1/n Σxᵢ
+Variance σ²=1/n Σ(xᵢ-μ)²
+Variance σ=√(1/n Σ(xᵢ-μ)²)
+
+Sampling
+Sample mean x̅=1/n Σxᵢ
+Sample variance sₓ²= 1/(n-1) Σ(xᵢ-x̅)²
+Std deviation sₓ=√(1/(n-1) Σ(xᵢ-x̅)²)
+z-score z = (x-μ)/σ ; The Z-score formula calculates how many standard deviations a data point is from the mean, where x is your data point, μ (mu) is the population mean, and σ (sigma) is the population standard deviation.
+sample z score z=(x̅-μ)/(σ/√n) ; where x̅ is the sample mean, μ is the population mean, σ is the population standard deviation, and n is the sample size
+sample Correlation r = 1/(n-1) ∑(ᵢ₌₁:ₙ)((xᵢ-x̅)/sₓ (yᵢ-y̅)/sᵧ) ; indicates how well a line describes the relationship; if close to 1 a line is a pretty good approximation.
+Population Correlation ρₓᵧ=cov(X,Y)/(σₓσᵧ)=(∑(ᵢ₌₁:៷)(xᵢ-μₓ)(yᵢ-μᵧ))/√(∑(ᵢ₌₁:៷)(xᵢ-μₓ)²(yᵢ-μᵧ)²)
+
+least-squares regression line ; linear regression
+ŷ=a+bx ; estimates the relationship between an independent variable (x) and a dependent variable (y) by finding the line of best fit. used to make predictions about what y will be with a given x.
+slope b=rsᵧ/sₓ ; intercept a = y̅-bx̅
+r: Correlation coefficient
+sᵧ: Sample standard deviation of
+sₓ: Sample standard deviation of
+y̅: Mean of y values
+x̅: Mean of x values
+sₑ=√(1/(n-2) ∑(ᵢ₌₀:ₙ)(yᵢ-ŷ)² ; represents the standard error of the estimate or standard deviation of the residuals for a simple linear regression model. This formula is used to measure the average amount that observed data points (yᵢ) differ from the predicted values (ŷ) from a linear regression line.
+SEⱃ=sₑ/√(∑(ᵢ₌₁:ₙ)(xᵢ-x̅)² ; the Standard Error of the Slope
+
+To test "H₀: b = 0", use t=b/SEⱃ
+CI=b ± t* SEⱃ ;
+represents the Confidence Interval (CI) for a regression coefficient (b) or a mean, used in statistics to estimate a parameter with a certain level of confidence. It provides a range of plausible values for the true population parameter based on sample data.
+CI: Confidence Interval. This is the range of values, calculated from the sample data, that is likely to contain the true population parameter.
+b: Point Estimate (e.g., the sample slope in regression, or the sample mean x̅). It is the central value of the interval.
+t*: Critical Value (t-score or t-multiplier). This value comes from the t-distribution based on the desired confidence level (e.g., 95%) and the degrees of freedom.
+SE: Standard Error of the estimate. This measures the standard deviation of the sampling distribution of the estimate, indicating how much the estimate (b) is expected to vary from sample to sample.
+Confidence level: A confidence interval with confidence level 1-α is such that 1-α of the time, the true value is contained in the confidence interval.
+
+One-Sample z-statistics
+To test H₀: μ=μ₀ use z = (x̅-μ₀)/(σ/√n)
+represents the one-sample z-test for a population mean, used when the population standard deviation (σ) is known. It is used to determine if the difference between a sample mean (x̅) and a hypothesized population mean (μ₀) is statistically significant.
+z: The z-test statistic (indicates how many standard errors the sample mean is from the hypothesized mean).
+x̅: The sample mean.
+μ₀: The hypothesized population mean.
+σ: The population standard deviation.
+n: The sample size.
+Confidence interval for μ=x̅±z* σ/√n ; z* is the critical value: the z-score corresponding to the chosen confidence level (ex: 1.96 for a 95% confidence level)
+Margin of Error ME = z* σ/√n
+Minimum sample size n ≥ (z* σ/ME)²
+
+One-Sample t-statistic
+SEM=sₓ/√n ; Standard Error of the Mean (SEM), It quantifies the variability or dispersion of sample means around the true population mean.
+t = (x̅-μ)/(sₓ/√n) ; t-statistic (or t-value) is a measure of how many standard errors a sample mean (x̅) is away from a hypothesized population mean (μ).
+Confidence Interval = x̅ ± t* sₓ/√n ; t*: The critical t-value for a desired confidence level and specific degrees of freedom (df=n-1), found using a t-distribution table. CI: determines a range of values likely to contain the true population mean (μ) when the population standard deviation is unknown and the sample size is small.
+
+Two-Sample t-statistic
+t = (x̅₁-x̅₂)/√(s₁²/n₁ + s₂²/n₂) ; This test is used to determine if there is a statistically significant difference between the means of two independent (unrelated) groups.
+Confidence Interval = (x̅₁-x̅₂) ± t* √(s₁²/n₁ + s₂²/n₂) ; used to estimate the range within which the true difference between two population means (μ₁-μ₂) is likely to fall, given sample data from two independent groups.
+
+Sample Proportions
+μₚ̂=p ; σₚ̂=√(p(1-p)/n) ; when random samples of size n are drawn from a large population with a true proportion p, the sample proportions (p̂) will form a probability distribution μ and σ as in the formulas.
+Confidence Interval = p̂ ± z* (SE) ; calculates an interval estimate for a population proportion
+SE = √(p̂(1-p̂)/n) ; SE: Standard Error, measuring the variability of sample proportions. p̂ (p-hat): The sample proportion, calculated as (number of successes) / (sample size).
+Sample size n > (z*/ME)²p*(1-p*) ; The inequality provides the minimum required sample size (n) needed to estimate a population proportion with a specified level of confidence and margin of error. p*: The estimated population proportion (or expected prevalence). ME: The margin of error (or desired level of precision), expressed as a decimal (e.g., 0.04 for a 4% margin of error).
+To test H₀:p=p₀, use z=(p̂-p₀)/√(p₀(1-p₀)/n)
+
+Two-sample proportions
+SE=√((p̂₁(1-p̂₁)/n₁) + (p̂₂(1-p̂₂)/n₂))
+CI=(p̂₁-p̂₂) ± z* SE
+To test H₀: p₁=p₂, use z = (p̂₁-p̂₂)/√(p̂(1-p̂)(1/n₁ + 1/n₂))
+p̂=(X₁+X₂)/(n₁+n₂) ; Xᵢ=successes
+
+Chi-Square Statistics
+χ²=∑(ᵢ₌₀:ₙ)(oᵢ-eᵢ)²/eᵢ ; used to measure the difference between observed frequencies (oᵢ) and expected frequencies (eᵢ) in a contingency table or categorical data. determines whether there is a statistically significant difference between observed and expected results, often used for goodness-of-fit or independence tests.
+oᵢ=observed ; eᵢ=expected
+
+Central limit theorem
+sₓ̅ → σ/√n as n → ∞ ; states that the distribution of sample means from any population will approximate a normal (bell-shaped) distribution as the sample size gets larger, typically if the sample size (n) is 30 or more, even if the original population isn't normally distributed.
+Central Limit Theorem Let us have a random sample X₁,...,Xₙ following a given distribution with mean μ and variance σ2, then we have:
+X̅∼₍ₙ→₊∞₎ N(μ,σ/√n) ; describes the Central Limit Theorem (CLT), where the sample mean X̅ of a large sample (n) from a population with mean μ and standard deviation σ approximates a normal distribution. As ₙ→₊∞, X̅ becomes normally distributed with mean μ and standard error σ/√n.
+
+The Weak Law of Large Numbers (WLLN) states that as a sample size increases, the sample mean converges in probability to the theoretical population mean.
+limₙ→∞ P(|X̅ₙ-μ|≥ε)=0 ; X̅ₙ is the sample mean ; ε > 0
+
+The Strong Law of Large Numbers (SLLN) states that the average of a large number of independent and identically distributed (IID) random variables will converge almost surely (with probability 1) to the true expected value (mean) as the number of samples goes to infinity
+P(limₙ→∞ X̅ₙ=μ)=1
+
+
+Probabilities/Statistics
+------------------------
+
+Definitions:
+Median = center value {0, 1, (90), 90, 100}
+Midrange = (highest + lowest) / 2 = 50
+Mode = Most common value = 90
+Average = Σvalues/#values = arithmetic mean = 56.2
+Range = highest value - lowest value = 100
+Interquartile range = median upper half - median lower half. Measures spread in data set like the range, variance and standard deviation.
+Variance = σ² = ∑(ᵢ₌₁:៷)(xᵢ-μ)²/N
+Standard deviation = σ
+Mean = μ
+Mean absolute Deviation MAD = Σ|xᵢ-μ|/N ; MAD measures the average distance between each data point and the mean, indicating the variability or spread in a dataset.
+
+Venn diagram
+__________________
+| _____________   |
+|/     /   \   \  |
+|\__6__\_3_/_1_/  |
+|_______________2_|
+
+
+V1 V2 onlyV1 onlyV2 InBoth BothTogether All Neither
+9  4  6      1      3      10           12  2
+
+    V1 !V1
+ V2 3  1   4
+!V2 6  2   8
+    9  3  12
+
+Fraction = Relative frequency = #item/#(all items)
+    V1 !V1
+ V2 3/12  1/12   4/12
+!V2 6/12  2/12   8/12
+    9/12  3/12  12/12
+-> percentage = Fraction * 100...
+
+Distributions can be symmetrical, right/left tailed, can have clusters, gaps, outliers, multiple or no peaks, different spreads...
+
+Statistics is about understanding and analysing data.
+
+Samples
+-------
+Q3 + 1.5 IQR < outliers < Q1 = 1.5 IQR ; Outliers are defined as data points that differs significantly from other observations in a dataset, lying an abnormal distance from the general pattern.
+Percentile = % of data that is below or at the amount in question.
+Cumulative relative frequency: what % of the data under review has a value of V or less.
+
+z-scores measures how many standard deviations above or below the mean a data point has.
+z = (data points - mean)/standard deviation = (x - μ)/σ
+Density curves: areas indicate what % of the data is between a & b.
+
+Normal distribution
+1σ contains 68%, 2σ 95%, 3σ 99.7%.
+z-scores can be used with empirical rule/table to estimate % with random σ
+
+Residual: difference/distance btw point and regression line
+Least square regression: Σ(rₙ)² amplifies outliers by squaring residual
+
+P(c) = # of possibilities that meet condition c/# of equally likely possibilities
+
+Set: a collection of distinct objects/items/elements.
+Intersect ∩: contains common elements of both sets
+Union ∪: contains all elements in both sets.
+
+Universal set U
+Relative complement: X-Y = X\Y ≠ Y-X ; X-X = ∅ = {}
+Absolute complement: X'=U-X
+Subset B ⊂ A; B ⊆ A; B ⊄ A; B ⊈ A
+Superset A ⊃ B; A ⊇ B; A ⊅ B; A ⊉ B
+Theoretical probability: ex coin flip 50%
+Experimental probability: may not be equal to 50%!
+
+Dependent probability
+P(event 1 -> event 2) = P(1).P(2|1) (| means given)
+Removing an item that was picked creates dependencies for repeated trials.
+
+Permutation
+Choosing/picking without putting back
+R here is the number of permutations not the probability
+R(ordering N) = N!
+R(ordering N (items) into M (slots)) = N!/(N-M)!
+   If N = M -> R = N!
+
+Combinations
+Don't care about order
+R = N!/((N-K)!K!)
+Number of k-sized groups with N people without repeats/caring about order
+P(K heads out of N flips) = (N!/((N-K)!K!))/2ᴺ = # of combinations / total # of outcomes
+
+If Y is continuous then P(Y=I)=0; instead need to use bounded probabilities P(Y≤I) or P(I<Y<J) ; P(Y≤I) = P(Y<I) !
+P(I<Y<J) = ∫(៲:𐼈)f(x)dx = area where f(x) = PDF probability density function
+
+Binomial variables
+1) Made up of independent trials
+2) Each trial is either success or failure
+3) Fixed # of trials
+4) Probability of success of each trial is constant
+
+10% Rule: if sample ≤ 10% population then it's safe to assume approximate independence.
+n     target=12.5%   sample/n | sample=3
+20    10.5%          15%
+30    11.2%          10%
+100   12.1%          3%
+1000  12.5%          0.003%
+
+Binomial probability
+If p ≠ 50% -> distribution may no be symmetric
+Ex: p > 0.5
+  |
+  ||
+ ||||
+|||||
+
+Sampling distribution
+μₚ̂=μₓ/n=p ; σₚ̂=σₓ/n=√(p(1-p)/n) ; describe the sampling distribution of the sample proportion (p̂), where n is the sample size, p is the population proportion, and x is the count of successes.
+If n*p ≤ 10 -> skewed to the right
+Rule of thumb: if n*p ≥ 10 and n(1-p) ≥ 10 -> approximately normal
+
+Central limit theorem
+The sampling distribution of the mean will always be normally distributed as long as the sample size is large enough.
+Assumptions (1) sampled at random (2) samples are not related to one another. (3) in samples without replacement, sample size should not exceed 10% of the population. (4) sample size are sufficiently large (> 30 in symmetric populations).
+σₓ̅²=σ²/n
+σₓ̅=σ/√n
+Population N, sample n, 1 sample
+p=probability of random variable
+p̂=sample probability of random variable
+p is unknown, but p̂ was determined after 1 sample.
+σₚ̂=√(p(1-p)/n)
+The probability that p is within 2σₚ̂ of p ≈ 95%.
+σₚ̂ is unknown but the standard error SEₚ̂=√(p̂(1-p̂)/n) can be calculated
+
+z-score tables give the probability of success around/after a known standard deviations away from the mean.
+statisticians use a t-table instead of z-table that provides more accurate results.
+x̅±t* s/√n (z* underestimates error)
+
+
+Hypothesis testing is a statistical method used to determine if there is enough evidence in a sample data to draw conclusions that a certain parameter/condition is true for the entire population.
+step 1: formulate 2 competing hypothesis, the null hypothesis H₀ and the alternative Hₐ. Ex: Claims that product kills 95% of germs. H₀:μ ≥95% Hₐ:μ<95%, hypothesis testing can use z-test, t-test, chi-square test.
+step 2: significance level: the probability of rejecting H₀ when it is true
+α ; ex α=0.05
+step 3: take a sample: ex n=100; x̅ =94% ; S sample standard deviation
+step 4: Calculate p-value=P(x̅≥94 | H₀ is true)
+step 5: p-value ≤ α -> Reject Hypothesis H₀
+                > α -> Do no reject H₀
+Type 1 error: H₀ true, reject H₀
+Type 2 error: H₀ false, fail to reject H₀
+Power = P(rejecting H₀ | H₀ false) = 1 -P(not rejecting H₀ | H₀ false) = P(not making type 2 error)
+Can be increased by increasing α but this also increases P(type 1 error)
+Can be increased by increasing n, by decreasing variability, by increasing H₀ distance from parameter (last 2 are usually not controllable)
+
+when to use:
+   z-test: population variance is known, otherwise sample size is large n ≥ 30. It is assumed z-statistics follows a standard normal distribution.
+   t-test: population variance unknown, sample size small n < 30. It is assumed z-statistics follows a t-distribution with a degree of freedom=n-1.
+z-score = (x̅-μ)/(σ/√n)
+t-score = (x̅-μ)/(s/√n)
+for both z and t:
+   independence condition: samples must be independent and must have a distribution identical to the population's (normal), sample must be random. sampling with replacement, sample size ≤ 10% of pop.
+   Normal condition: parent population normal, n ≥ 30, sample is symmetric and there are no significant outliers.
+
+z-stats proportions: H₀:P=P₁ ; Hₐ:P≠P₁ ; z = (p̂-P₀)/σₚ̂ ; σₚ̂ =√(P₀(1-P₀)/n); p̂ sample proportion
+   -> use z to figure out p-value
+t-stats: means: H₀:μ=μ₁ ; Hₐ:μ≠μ₁ ; x̅ sample mean ; sₓ ; z = (x̅-μ₀)/σₓ ; μ₀ assumed mean from the null hypothesis; σₓ standard error of the mean/SD of the sampling distribution of the sample mean ; z ideally use a z-statistic
+σ may be unknown, so instead we estimate σₓ̅ ; σₓ̅ = σ/√n
+t = (x̅-μ₀)/(sₓ/√n) ; sₓ sample standard deviation
+
+comparing populations
+σₚ̅₁₋ₚ̅₂ = √(P₁(1-P₁)/n + P₂(1-P₂)/n)
+μₚ̅₁₋ₚ̅₂=P₁-P₂ -> P₁-P₂ = 0 -> P(P₁-P₂|H₀)<α
+-> zₚ̅₁₋ₚ̅₂ -> z table -> compare with α assume P₁=P₂=P≈P̅
+
+Chi-square distribution: Q = X² ; variable X ~ N(0,1) -> normal (μ=0; σ²=1)
+~ means member of
+Q ~ χ²₁ (chi squared, 1 degree of freedom (1 sum)) Q²=X²+Y² -> Q² ~ χ²₂
+P(Q₂>a) -> Look at Chi-squared table -> p-value
+ex: H₀, Hₐ, α, degree of freedom = # P-1, χ² = ∑(ᵢ₌₀:p)(Pₒᵢ-Pₑᵢ)/Pₑᵢ (observed vs expected) -> compare to table p-value.
+
+In N dimensions, degree of freedom = (# P₁-1)...(# P៷-1) ; χ² = ∑(ᵢ₌₀:p₀)+...+∑(ᵢ₌₀:p៷)
+
+Conditions for linear inferences:
+1) Linear relationships btw variables
+2) Independence
+3) Normal distribution for any x-y
+4) Equal variance, same spread for any x
+5) Random
+Degrees of freedom = # data points - 2
+
+y can be transformed to log(y) or √(y) or y² and linear regression could be used on the transformation of y. Many tools already exist around linear regression, and this would allow us to re-use those tools instead of developing new ones for each function.
+
+//-----------------------------------------------------------------------------
+// 21. Logic
+//-----------------------------------------------------------------------------
+
+Karnaugh map
+  |   | A̅B̅  A̅B  AB  AB̅
+--|---|----------------
+  |   | 00  01  11  10
+--|---|----------------
+C̅ | 0 | 0⎞ ⎛1⎞ (0  ⎛0)
+C | 1 | 0⎠(⎝1⎠  1) ⎝0
+
+From k-map:
+Fₘᵢₙ=A̅B+BC
+Fₘₐₓ=B.(A̅+C)
+F̅=B̅+AC̅
+
+n-cube k-maps!
+we want to remove redundancies to minimize logic. -> need to find prime implicants.
+
+The Quine-McCluskey algorithm (QMC), also known as the method of prime implicants or the tabulation method, is a method used for minimization of Boolean functions
+
+The Petrick method is used to determine all minimum-cost Sum-of-Products (SOP) solutions for a Boolean function after finding the prime implicants. It is specifically used to resolve cases where the Quine-McCluskey method leaves non-essential prime implicants that do not uniquely cover all minterms.
+
+Covering table logic refers to the systematic process of constructing truth tables to evaluate the truth values of complex logical statements, arguments, or to verify logical equivalences.
+
+Shannon expansion (or decomposition) is a fundamental Boolean algebra theorem used to simplify complex logic functions by breaking them into smaller, manageable sub-functions based on a selected variable. It is expressed as F(a,b,...,z)=aF(1,b,..,z)+a̅F(1,b,..,z)=aF(a=1)+a̅F(a=0), allowing for efficient digital circuit design, particularly with multiplexers, transmission gates and CMOS logic, to reduce gate count and power.
+
+not   ¬  !   ̅  ~
+and   ∧  &  .  &&
+or    ∨  +  | (| is common in programming languages)
+xor   ⊕  ⊻  ≢
+xnor  ⊙  ≡
+nand  ⊼  | (nand also uses | ?)
+nor   ⊽
+
+De Morgan law:
+A̅∨̅B̅=A̅∧B̅
+A̅∧̅B̅=A̅∨B̅
+
+xor
+A⊕B=AB̅+A̅B
+xnor
+A⊙B=AB+A̅B̅
+
+A⊕B⊕C=A(B⊙C)+A̅(B⊕C)
+
+parity check (even 1s)
+A⊕B⊕C⊕D
+
+F̅(a,b,c,d)=Fᵈ(a̅,b̅,c̅,d̅)
+Fᵈ : This represents the dual of the function, where OR and AND operators are interchanged, but the literals themselves are not typically inverted.
+
+Decomposition
+F=P(A⊕B)+R
+
+flip flops
+D Q⁺
+0 0
+1 1
+
+T Q⁺
+0 Q
+1 Q̅
+
+J K Q⁺
+0 0 Q
+0 1 0
+1 0 1
+1 1 Q̅
+
+S R Q⁺
+0 0 Q
+0 1 0
+1 0 1
+1 1 Forbidden
+
+can have conversion tables from one type to another...
+
+synchronous = with clk
+asynchronous = without clk
+
+State-transition table
+
+Current|  Inputs
+stat   | 0     1
+------------------------
+   S₁  | S₂    S₁   next
+   S₂  | S₁    S₂   states
+
+-> State machines, Finite state machines (FSM), Deterministic/non-deterministic...
+
+x in tables can be used to represent don't care, and simplify number of rows
+A B O
+0 x 1
+1 0 0
+x 1 1
+
+Two-level optimization logic minimizes Boolean functions into a Sum-of-Products (SOP) or Product-of-Sums (POS) form, featuring maximum two gate levels between inputs and outputs.
+
+Branch and Bound (B&B) is a powerful algorithm design paradigm for solving complex optimization problems, especially combinatorial problems, by systematically exploring solutions, breaking the problem into smaller parts (branching), and using calculated limits (bounds) to discard unpromising paths, thereby pruning the search space and finding optimal solutions efficiently.
+
+ESPRESSO-EXACT is an exact two-level Boolean logic minimization algorithm that computes a globally minimal representation of a logic function, unlike the faster, heuristic-based Espresso-II. It guarantees the fewest possible cubes in a PLA, often used for smaller, critical circuits.
+
+Positional Cube Notation (PCN) is a method used in digital logic design—specifically in logic minimization and CAD tools—to represent Boolean functions as a set of product terms (cubes). It acts as a compact, machine-readable format for identifying prime implicants in multi-variable Boolean spaces.
+
+The Unate Recursive Paradigm (URP) is a divide-and-conquer strategy in logic synthesis that uses Shannon expansion to recursively break down complex Boolean functions into smaller, "unate" (monotonic) cofactors. By selecting a binate variable for splitting, URP efficiently solves problems like tautology checking, complementation, and prime generation, as unate functions are much easier to manipulate.
+
+MVL - multiple valued logic (multiple inputs but binary outputs)
+MVL Shannon, MVL positional cubes, MVL unate....
+
+Heuristics, two level minimization
+Ex: Espresso heuristic logic minimizer, MINI, presto
+A heuristic approach offers a "good enough" solution to complex logic minimization problems, often focusing on the most relevant aspects of a problem rather than exhaustive, time-consuming analysis.
+
+A Binary Decision Diagram (BDD) is a directed acyclic graph (DAG) used in digital logic to represent and manipulate Boolean functions.
+ROBDD (reduced ordered BDD)
+BDT Binary Decision Tree
+
+other decision diagrams
+Reed-Muller expansion
+FDD Functional Decision Diagrams (Davio expansion)
+Reed-Muller transform
+arithmetic transform - binary moment diagram BMD
+
